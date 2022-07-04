@@ -8,21 +8,14 @@
 			src="https://kit.fontawesome.com/379118b5c6.js"
 			crossorigin="anonymous"
 		></script>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="./css/principais/principais-box.css" />
-		<link
-			rel="stylesheet"
-			href="./css/principais/principais-container.css"
-		/>
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/base.css" />
 		<link rel="stylesheet" href="./css/menu/menu.css" />
 		<link rel="stylesheet" href="./css/banner/banner.css" />
+		<link rel="stylesheet" href="./css/principais/principais.css" />
+		<link rel="stylesheet" href="./css/formContato/formContato.css" />
+		<link rel="stylesheet" href="./css/faq/faq.css" />
+		<link rel="stylesheet" href="./css/rodape/rodape.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -44,56 +37,75 @@
 
 		<section class="banner">
 			<div class="banner__bg">
-				<div class="banner__carousel"></div>
+				<div class="banner__conteudo">
+					<h2 class="banner__conteudo__titulo">
+						Temporada Promocional
+					</h2>
+					<h3 class="banner__conteudo__subtitulo">
+						Produtos selecionados com até 33% de desconto
+					</h3>
+					<button class="banner__conteudo__btn">Ver Decks</button>
+				</div>
 			</div>
 		</section>
 
 		<!-- Sessão produtos principais -->
 
-		<section class="principais container-fluid">
-			<div class="principais__container row justify-content-center">
-				<div class="principais__box col-sm-6 col-md-3 col-lg-2">
-					<img src="" alt="" class="destaques__img" />
+		<section class="principais">
+			<div class="principais__textos">
+				<h2 class="principais__titulo">Magic</h2>
+				<a class="principais__link" href=""
+					>Ver tudo
+					<i class="fa-solid fa-arrow-right"></i>
+				</a>
+			</div>
+			<div class="principais__container">
+				<div class="principais__box">
+					<img
+						src="./img/principal1.jpg"
+						alt=""
+						class="principais__img"
+					/>
 					<div class="principais__conteudo container">
 						<h2 class="principais__titulo">A</h2>
 						<h2 class="principais__preco">A</h2>
 						<a href="" class="principais__link"></a>
 					</div>
 				</div>
-				<div class="principais__box col-sm-6 col-md-3 col-lg-2">
-					<img src="" alt="" class="destaques__img" />
+				<div class="principais__box">
+					<img src="" alt="" class="principais__img" />
 					<div class="principais__conteudo container">
 						<h2 class="principais__titulo"></h2>
 						<h2 class="principais__preco"></h2>
 						<a href="" class="principais__link"></a>
 					</div>
 				</div>
-				<div class="principais__box col-sm-6 col-md-3 col-lg-2">
-					<img src="" alt="" class="destaques__img" />
+				<div class="principais__box">
+					<img src="" alt="" class="principais__img" />
 					<div class="principais__conteudo container">
 						<h2 class="principais__titulo"></h2>
 						<h2 class="principais__preco"></h2>
 						<a href="" class="principais__link"></a>
 					</div>
 				</div>
-				<div class="principais__box col-sm-6 col-md-3 col-lg-2">
-					<img src="" alt="" class="destaques__img" />
+				<div class="principais__box">
+					<img src="" alt="" class="principais__img" />
 					<div class="principais__conteudo container">
 						<h2 class="principais__titulo"></h2>
 						<h2 class="principais__preco"></h2>
 						<a href="" class="principais__link"></a>
 					</div>
 				</div>
-				<div class="principais__box col-sm-6 col-md-3 col-lg-2">
-					<img src="" alt="" class="destaques__img" />
+				<div class="principais__box">
+					<img src="" alt="" class="principais__img" />
 					<div class="principais__conteudo container">
 						<h2 class="principais__titulo"></h2>
 						<h2 class="principais__preco"></h2>
 						<a href="" class="principais__link"></a>
 					</div>
 				</div>
-				<div class="principais__box col-sm-6 col-md-3 col-lg-2">
-					<img src="" alt="" class="destaques__img" />
+				<div class="principais__box">
+					<img src="" alt="" class="principais__img" />
 					<div class="principais__conteudo container">
 						<h2 class="principais__titulo"></h2>
 						<h2 class="principais__preco"></h2>
@@ -105,9 +117,9 @@
 
 		<!-- Sessão produtos principais -->
 
-		<section class="secundarios container-fluid">
-			<div class="secundarios__container row justify-content-center">
-				<div class="secundarios__box col-sm-6 col-md-3 col-lg-2">
+		<section class="secundarios">
+			<div class="secundarios__container">
+				<div class="secundarios__box">
 					<img src="" alt="" class="secundarios__img" />
 					<div class="secundarios__conteudo container">
 						<h2 class="secundarios__titulo"></h2>
@@ -115,7 +127,7 @@
 						<a href="" class="secundarios__link"></a>
 					</div>
 				</div>
-				<div class="secundarios__box col-sm-6 col-md-3 col-lg-2">
+				<div class="secundarios__box">
 					<img src="" alt="" class="secundarios__img" />
 					<div class="secundarios__conteudo container">
 						<h2 class="secundarios__titulo"></h2>
@@ -123,7 +135,7 @@
 						<a href="" class="secundarios__link"></a>
 					</div>
 				</div>
-				<div class="secundarios__box col-sm-6 col-md-3 col-lg-2">
+				<div class="secundarios__box">
 					<img src="" alt="" class="secundarios__img" />
 					<div class="secundarios__conteudo container">
 						<h2 class="secundarios__titulo"></h2>
@@ -131,7 +143,7 @@
 						<a href="" class="secundarios__link"></a>
 					</div>
 				</div>
-				<div class="secundarios__box col-sm-6 col-md-3 col-lg-2">
+				<div class="secundarios__box">
 					<img src="" alt="" class="secundarios__img" />
 					<div class="secundarios__conteudo container">
 						<h2 class="secundarios__titulo"></h2>
@@ -139,7 +151,7 @@
 						<a href="" class="secundarios__link"></a>
 					</div>
 				</div>
-				<div class="secundarios__box col-sm-6 col-md-3 col-lg-2">
+				<div class="secundarios__box">
 					<img src="" alt="" class="secundarios__img" />
 					<div class="secundarios__conteudo container">
 						<h2 class="secundarios__titulo"></h2>
@@ -147,7 +159,7 @@
 						<a href="" class="secundarios__link"></a>
 					</div>
 				</div>
-				<div class="secundarios__box col-sm-6 col-md-3 col-lg-2">
+				<div class="secundarios__box">
 					<img src="" alt="" class="secundarios__img" />
 					<div class="secundarios__conteudo container">
 						<h2 class="secundarios__titulo"></h2>
@@ -160,9 +172,9 @@
 
 		<!-- Sessão produtos diversos -->
 
-		<section class="diversos container-fluid">
-			<div class="diversos__container row justify-content-center">
-				<div class="diversos__box col-sm-6 col-md-3 col-lg-2">
+		<section class="diversos">
+			<div class="diversos__container">
+				<div class="diversos__box">
 					<img src="" alt="" class="diversos__img" />
 					<div class="diversos__conteudo container">
 						<h2 class="diversos__titulo"></h2>
@@ -170,7 +182,7 @@
 						<a href="" class="diversos__link"></a>
 					</div>
 				</div>
-				<div class="diversos__box col-sm-6 col-md-3 col-lg-2">
+				<div class="diversos__box">
 					<img src="" alt="" class="diversos__img" />
 					<div class="diversos__conteudo container">
 						<h2 class="diversos__titulo"></h2>
@@ -178,7 +190,7 @@
 						<a href="" class="diversos__link"></a>
 					</div>
 				</div>
-				<div class="diversos__box col-sm-6 col-md-3 col-lg-2">
+				<div class="diversos__box">
 					<img src="" alt="" class="diversos__img" />
 					<div class="diversos__conteudo container">
 						<h2 class="diversos__titulo"></h2>
@@ -186,7 +198,7 @@
 						<a href="" class="diversos__link"></a>
 					</div>
 				</div>
-				<div class="diversos__box col-sm-6 col-md-3 col-lg-2">
+				<div class="diversos__box">
 					<img src="" alt="" class="diversos__img" />
 					<div class="diversos__conteudo container">
 						<h2 class="diversos__titulo"></h2>
@@ -194,7 +206,7 @@
 						<a href="" class="diversos__link"></a>
 					</div>
 				</div>
-				<div class="diversos__box col-sm-6 col-md-3 col-lg-2">
+				<div class="diversos__box">
 					<img src="" alt="" class="diversos__img" />
 					<div class="diversos__conteudo container">
 						<h2 class="diversos__titulo"></h2>
@@ -202,7 +214,7 @@
 						<a href="" class="diversos__link"></a>
 					</div>
 				</div>
-				<div class="diversos__box col-sm-6 col-md-3 col-lg-2">
+				<div class="diversos__box">
 					<img src="" alt="" class="diversos__img" />
 					<div class="diversos__conteudo container">
 						<h2 class="diversos__titulo"></h2>
@@ -213,38 +225,63 @@
 			</div>
 		</section>
 
-		<!-- Formulário e Faz -->
+		<!-- Formulário e Faq -->
 
-		<section class="formContato container-fluid">
-			<div class="formContato__img"></div>
-			<img src="" alt="" class="formContato__icone" />
-			<div class="faq"></div>
-			<ul class="faq__list">
-				<li class="faq__item"><a href="" class="faq__link"></a></li>
-				<li class="faq__item"><a href="" class="faq__link"></a></li>
-				<li class="faq__item"><a href="" class="faq__link"></a></li>
-				<li class="faq__item"><a href="" class="faq__link"></a></li>
-				<li class="faq__item"><a href="" class="faq__link"></a></li>
-				<li class="faq__item"><a href="" class="faq__link"></a></li>
-			</ul>
+		<section class="formContato">
+			<img
+				class="formContato__img"
+				src="./img/logo.svg"
+				alt=""
+				class="formContato__icone"
+			/>
+			<div class="faq">
+				<ul class="faq__list">
+					<li class="faq__item">
+						<a href="" class="faq__link">Quem Somos</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Política de Privacidade</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Programa de Fidelidade</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Nossas Lojas</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Quero Ser Franqueado</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Anuncie Aqui</a>
+					</li>
+				</ul>
+			</div>
 			<form action="" class="formContato__form">
-				<h2 class="formContato__titulo"></h2>
+				<h2 class="formContato__titulo">Fale Conosco</h2>
 				<input
 					type="text"
-					class="formContato__none"
+					class="formContato__nome"
 					id="nome"
 				/><textarea
 					name=""
 					id=""
 					class="formContato__menssagem"
 				></textarea
-				><button class="formContato__submit"></button>
+				><button class="formContato__submit">Enviar Mensagem</button>
 			</form>
 		</section>
 
-		<footer class="rodape container-fluid">
-			<h2 class="rodape__titulo"></h2>
-			<h3 class="rodape__ano"></h3>
+		<footer class="rodape">
+			<h2 class="rodape__titulo">
+				Desenvoldido por
+				<a
+					href="http://gitgub.com/itariss"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Ítalo Rissardi</a
+				>
+			</h2>
+			<h3 class="rodape__ano">2022</h3>
 		</footer>
 		<script src="./js/carousel.js"></script>
 	</body>
