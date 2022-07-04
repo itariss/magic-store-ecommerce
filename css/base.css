@@ -1,0 +1,23 @@
+:root {
+    --bg-general: #F5F5F5;
+    --bg-form: #EAF2FD;
+    --btn-color: #2A7AE4;
+    --btn-hover-prim: #5595E9;
+    --btn-hover-sec: #D4E4FA;
+    --form-bg: #EAF2FD;
+    --form-border: #C8C8C8;
+    --menu-border-focus: #2A7AE4;
+    --placeholder-color: #A2A2A2;
+    --pure-white: #FFFFFF;
+    --text-color: #464646;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-general);
+}
