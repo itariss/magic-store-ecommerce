@@ -1,0 +1,9 @@
+.formContato__nome {
+    width: calc(100% - 2rem);
+    height: 3.5rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}

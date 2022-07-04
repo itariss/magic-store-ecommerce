@@ -1,0 +1,13 @@
+@import url(./principais-container.css);
+@import url(./principais-box.css);
+@import url(./principais-titulo.css);
+@import url(./principais-texto.css);
+@import url(./principais-link.css);
+@import url(.//principais-img.css);
+
+.principais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}

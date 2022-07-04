@@ -1,0 +1,11 @@
+@import url(./banner-bg.css);
+@import url(./banner-conteudo.css);
+@import url(./banner-conteuto-btn.css);
+@import url(./banner-conteudo-titulo.css);
+@import url(./banner-conteudo-subtitulo.css);
+
+.banner {
+    margin-bottom: 1rem;
+    display: flex;
+    color: var(--pure-white);
+}

@@ -1,0 +1,5 @@
+.principais__link {
+    align-self: flex-end;
+    color: var(--btn-color);
+    font-size: .875rem;
+}

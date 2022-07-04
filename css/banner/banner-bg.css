@@ -1,0 +1,9 @@
+.banner__bg {
+    background: url(../../img/carousel-1.jpg) center / cover;
+    height: 12rem;
+    width: 100%;
+    transition: 1s;
+    z-index: -1;
+    display: flex;
+
+}

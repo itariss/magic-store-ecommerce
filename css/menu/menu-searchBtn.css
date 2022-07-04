@@ -1,0 +1,7 @@
+.menu__searchBtn {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.065rem;
+    padding: 0 1rem;
+}
