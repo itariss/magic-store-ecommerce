@@ -1,8 +1,0 @@
-.principais__box {
-    height: 15.5625rem;
-}
-
-.principais__box:nth-of-type(5),
-.principais__box:nth-of-type(6) {
-    display: none;
-}

@@ -1,0 +1,6 @@
+.produtos__container {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    column-gap: 1rem;
+    width: 100%;
+}

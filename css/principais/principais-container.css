@@ -1,6 +1,0 @@
-.principais__container {
-    display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
-    gap: 1rem;
-    width: 100%;
-}

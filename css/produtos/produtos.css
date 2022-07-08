@@ -1,0 +1,16 @@
+@import url(./produtos-box.css);
+@import url(./produtos-container.css);
+@import url(./produtos-conteudo.css);
+@import url(./produtos-img.css);
+@import url(./produtos-link.css);
+@import url(./produtos-nome.css);
+@import url(./produtos-preco.css);
+@import url(./produtos-texto.css);
+@import url(./produtos-titulo.css);
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}

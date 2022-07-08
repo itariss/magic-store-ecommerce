@@ -1,0 +1,16 @@
+.produtos__box {
+    height: 15.5625rem;
+    flex-direction: column;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+}
+
+.produtos__box:nth-of-type(2n) {
+    justify-self: end;
+}
+
+.produtos__box:nth-of-type(5),
+.produtos__box:nth-of-type(6) {
+    display: none;
+}
