@@ -20,4 +20,5 @@ a {
 body {
     color: var(--text-color);
     background-color: var(--bg-general);
+    font-family: 'Raleway', sans-serif;
 }
