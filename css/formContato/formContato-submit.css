@@ -5,4 +5,6 @@
     color: var(--pure-white);
     padding: 0.75rem 1rem;
     font-size: .875rem;
+    position: relative;
+    right: 1rem;
 }
