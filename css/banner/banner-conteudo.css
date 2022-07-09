@@ -3,8 +3,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 51.05%;
     align-self: flex-end;
     padding: 1rem;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__conteudo {
+        padding: 2rem;
+    }
+
 }

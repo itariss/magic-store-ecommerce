@@ -6,6 +6,7 @@
 
 .banner {
     margin-bottom: 1rem;
+    margin-top: 4.5rem;
     display: flex;
     color: var(--pure-white);
 }
