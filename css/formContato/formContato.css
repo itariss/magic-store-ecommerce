@@ -12,3 +12,12 @@
     background-color: var(--bg-form);
     padding: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+    .formContato {
+        flex-direction: row;
+        padding: 1rem 2rem;
+        justify-content: space-between
+    }
+
+}

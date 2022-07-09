@@ -2,4 +2,6 @@
     align-self: flex-start;
     font-weight: 700;
     margin-bottom: 1rem;
+    position: relative;
+    right: 1rem;
 }
