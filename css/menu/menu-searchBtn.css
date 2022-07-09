@@ -3,5 +3,13 @@
     border: none;
     color: var(--text-color);
     font-size: 1.065rem;
-    padding: 0 1rem;
+
+}
+
+@media screen and (min-width: 768px) {
+    .menu__searchBtn {
+        position: relative;
+        right: 6.275rem;
+        color: var(--placeholder-color)
+    }
 }

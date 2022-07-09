@@ -1,3 +1,16 @@
 .menu__search {
     display: none;
 }
+
+@media screen and (min-width: 768px) {
+    .menu__search {
+        display: inline-flex;
+        width: 17rem;
+        height: 2.5rem;
+        background: var(--bg-general);
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding-left: 1rem;
+    }
+}

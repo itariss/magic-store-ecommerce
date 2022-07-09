@@ -3,3 +3,11 @@
 @import url(./menu-search.css);
 @import url(./menu-login.css);
 @import url(./menu-searchBtn.css);
+
+.menu {
+    background: var(--pure-white);
+    position: fixed;
+    width: 100%;
+    padding-right: 1rem;
+    top: 0vh;
+}
