@@ -3,3 +3,9 @@
 .faq {
     padding: 0 1rem;
 }
+
+@media screen and (min-width: 768px) {
+    .faq {
+        width: 15.875rem;
+    }
+}
