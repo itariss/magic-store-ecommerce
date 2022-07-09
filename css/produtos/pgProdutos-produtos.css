@@ -1,0 +1,29 @@
+@import url(./pgProdutos-produtos-box.css);
+@import url(./pgProdutos-produtos-container.css);
+@import url(./produtos-conteudo.css);
+@import url(./produtos-img.css);
+@import url(./produtos-link.css);
+@import url(./produtos-nome.css);
+@import url(./produtos-preco.css);
+@import url(./produtos-texto.css);
+@import url(./produtos-titulo.css);
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-top: 8.1875rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .produtos {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos {
+        padding: 0 9.5rem;
+    }
+}

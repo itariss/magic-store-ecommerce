@@ -1,0 +1,11 @@
+.produtos__box {
+    height: 15.5625rem;
+    flex-direction: column;
+    display: flex;
+}
+
+@media screen and (max-width: 360px) {
+    .produtos__box {
+        justify-self: center;
+    }
+}
