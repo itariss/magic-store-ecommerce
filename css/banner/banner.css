@@ -10,3 +10,9 @@
     display: flex;
     color: var(--pure-white);
 }
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        margin-top: 6.5rem;
+    }
+}

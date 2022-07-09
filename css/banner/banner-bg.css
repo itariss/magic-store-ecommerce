@@ -19,6 +19,6 @@
 @media screen and (min-width: 1440px) {
     .banner__bg {
         background: url(../../img/carousel-1.png) center / cover;
-
+        height: 24rem;
     }
 }

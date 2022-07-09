@@ -20,3 +20,9 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .menu__login {
+        width: 11.375rem;
+    }
+}
