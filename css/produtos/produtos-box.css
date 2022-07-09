@@ -3,14 +3,26 @@
     flex-direction: column;
     display: flex;
     align-self: center;
-    justify-self: start;
-}
-
-.produtos__box:nth-of-type(2n) {
-    justify-self: end;
+    justify-self: center;
 }
 
 .produtos__box:nth-of-type(5),
 .produtos__box:nth-of-type(6) {
     display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos__box:nth-of-type(5) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1056px) {
+    .produtos__box:nth-of-type(6) {
+        display: block;
+    }
+
+    .produtos__box {
+        justify-self: center;
+    }
 }

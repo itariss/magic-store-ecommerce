@@ -2,3 +2,17 @@
     width: 9.75rem;
     height: 10.875rem;
 }
+
+@media screen and (min-width: 688px) {
+    .produtos__img {
+        width: 10.25rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos__img {
+        width: 11rem;
+    }
+
+}

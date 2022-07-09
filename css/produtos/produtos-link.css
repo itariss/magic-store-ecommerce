@@ -9,3 +9,9 @@
     align-self: flex-start;
     margin-bottom: .5rem;
 }
+
+@media screen and (min-width: 768px) {
+    .produtos__link {
+        font-size: 1rem;
+    }
+}
