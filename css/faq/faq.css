@@ -9,3 +9,11 @@
         width: 15.875rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .faq {
+        display: flex;
+        height: 18.9375rem;
+        width: max-content;
+    }
+}

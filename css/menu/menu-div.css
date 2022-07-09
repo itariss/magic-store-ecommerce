@@ -12,3 +12,9 @@
         padding: 0 2rem;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .menu__div {
+        padding: 0 9.5rem;
+    }
+}

@@ -12,3 +12,10 @@
         padding: 1rem 2rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .formContato__form {
+        width: 35rem;
+        padding: 0 1rem;
+    }
+}

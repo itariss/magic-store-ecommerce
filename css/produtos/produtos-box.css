@@ -2,8 +2,6 @@
     height: 15.5625rem;
     flex-direction: column;
     display: flex;
-    align-self: center;
-    justify-self: center;
 }
 
 .produtos__box:nth-of-type(5),
@@ -11,18 +9,22 @@
     display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 360px) {
+    .produtos__box {
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1224px) {
     .produtos__box:nth-of-type(5) {
         display: block;
     }
 }
 
-@media screen and (min-width: 1056px) {
+@media screen and (min-width: 1440px) {
+
     .produtos__box:nth-of-type(6) {
         display: block;
     }
 
-    .produtos__box {
-        justify-self: center;
-    }
 }

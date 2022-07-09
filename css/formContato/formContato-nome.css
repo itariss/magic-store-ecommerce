@@ -30,3 +30,9 @@
     font-size: .75rem;
     color: var(--btn-color);
 }
+
+@media screen and (min-width: 1440px) {
+    .formContato__nome {
+        width: 100%;
+    }
+}

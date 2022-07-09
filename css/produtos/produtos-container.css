@@ -1,12 +1,14 @@
 .produtos__container {
     display: grid;
-    grid-template: 1fr 1fr/ repeat(auto-fit, minmax(9.5rem, 1fr));
+    grid-template: 1fr 1fr/ repeat(auto-fit, minmax(9.5rem, 9.5rem));
     column-gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
 }
 
 @media screen and (min-width: 688px) {
     .produtos__container {
-        grid-template: 1fr / repeat(auto-fit, minmax(9.5rem, 1fr));
+        grid-template: 1fr / repeat(auto-fit, minmax(9.5rem, 11rem));
         gap: 1rem;
     }
 

@@ -14,3 +14,9 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .banner__conteudo {
+        padding: 2rem 9.5rem;
+    }
+}

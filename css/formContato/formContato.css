@@ -21,3 +21,10 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .formContato {
+        padding: 4rem 9.5rem;
+        justify-content: space-between;
+    }
+}
