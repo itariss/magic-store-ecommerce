@@ -1,0 +1,26 @@
+@import url(./formProduto-titulo.css);
+@import url(./formProduto-imagem.css);
+@import url(./formProduto-inputs.css);
+@import url(./formProduto-descricao.css);
+@import url(./formProduto-submit.css);
+
+.formProduto {
+    background-color: var(--bg-general);
+    padding: 4.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2rem);
+}
+
+@media screen and (min-width: 768px) {
+    .formProduto {
+        width: calc(100% - 4rem);
+        padding: 4.75rem 2rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .formProduto {
+        align-items: center;
+    }
+}

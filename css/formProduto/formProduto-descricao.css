@@ -1,0 +1,21 @@
+.formProduto__descricao {
+    margin-bottom: .5rem;
+    height: 5.125rem;
+    resize: none;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    padding-top: 1.125rem;
+}
+
+.formProduto__descricao:focus {
+    border-bottom: 2px var(--btn-color) solid;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .formProduto__descricao {
+        width: 35rem;
+    }
+}

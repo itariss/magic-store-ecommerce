@@ -1,0 +1,26 @@
+.formProduto__categoria,
+.formProduto__nome,
+.formProduto__preco {
+    height: 3.5rem;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px var(--form-border) solid;
+    outline: none;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.formProduto__categoria:focus,
+.formProduto__nome:focus,
+.formProduto__preco:focus {
+    border-bottom: 2px var(--btn-color) solid;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .formProduto__categoria,
+    .formProduto__nome,
+    .formProduto__preco {
+        width: 35rem;
+    }
+}
