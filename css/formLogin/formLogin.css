@@ -1,0 +1,13 @@
+@import url(./formLogin-titulo.css);
+@import url(./formLogin-user.css);
+@import url(./formLogin-password.css);
+@import url(./formLogin-submit.css);
+
+.formLogin {
+    background-color: var(--bg-general);
+    padding: 4.75rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 5rem);
+}

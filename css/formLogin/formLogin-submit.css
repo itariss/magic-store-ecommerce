@@ -1,0 +1,17 @@
+.formLogin__submit {
+    background: var(--btn-color);
+    border: 1px var(--btn-color) solid;
+    color: var(--pure-white);
+    padding: 0.75rem 1rem;
+    font-size: .875rem;
+    width: 6.8125rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .formLogin__submit {
+        width: 28.4375rem;
+        height: 3.9375rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+}
