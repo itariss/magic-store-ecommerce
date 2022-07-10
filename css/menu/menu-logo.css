@@ -1,11 +1,11 @@
 .menu__logo {
-    padding: 1.375rem 0;
+    width: 7.25rem;
+    height: 3.125rem;
+
 }
 
 @media screen and (min-width: 1024px) {
     .menu__logo {
-        padding: 0;
         width: 11rem;
-        height: 3.125rem;
     }
 }
