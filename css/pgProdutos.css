@@ -1,7 +1,7 @@
 /* Estilos da página "Todos os produtos" */
 
 /* Alterando estilos dos componentes */
-@import url(./menu/pgProdutos-menu.css);
+@import url(./menu/menu.css);
 @import url(./produtos/pgProdutos-produtos.css);
 /*Fim da alteração  */
 @import url(./formContato/formContato.css);

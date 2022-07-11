@@ -1,0 +1,11 @@
+.descricao__titulo {
+    font-size: 1.375rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+    .descricao__titulo {
+        font-size: 3.25rem;
+    }
+}
