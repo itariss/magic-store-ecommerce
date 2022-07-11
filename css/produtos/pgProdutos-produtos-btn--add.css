@@ -1,4 +1,4 @@
-.banner__conteudo__btn {
+.produtos__btn--add {
     background: var(--btn-color);
     border: none;
     color: var(--pure-white);
@@ -9,13 +9,13 @@
     text-align: center;
 }
 
-.banner__conteudo__btn:hover {
+.produtos__btn--add:hover {
     cursor: pointer;
     background-color: var(--btn-hover-prim);
 }
 
 @media screen and (min-width: 1440px) {
-    .banner__conteudo__btn {
+    .produtos__btn--add {
         padding: 1rem 1.5rem;
     }
 

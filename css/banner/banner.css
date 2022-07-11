@@ -6,13 +6,6 @@
 
 .banner {
     margin-bottom: 1rem;
-    margin-top: 4.5rem;
     display: flex;
     color: var(--pure-white);
-}
-
-@media screen and (min-width: 1024px) {
-    .banner {
-        margin-top: 6.5rem;
-    }
 }

@@ -1,6 +1,17 @@
 .produtos__img {
     width: 9.75rem;
     height: 10.875rem;
+    border-radius: 9px;
+
+}
+
+.produtos__img:hover {
+    cursor: pointer;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    border-bottom: 3px var(--btn-color) solid;
+    border-left: 3px var(--btn-color) solid;
 }
 
 @media screen and (min-width: 688px) {

@@ -10,6 +10,8 @@
     --placeholder-color: #A2A2A2;
     --pure-white: #FFFFFF;
     --text-color: #464646;
+    scroll-behavior: smooth;
+
 }
 
 a {
@@ -21,4 +23,11 @@ body {
     color: var(--text-color);
     background-color: var(--bg-general);
     font-family: 'Raleway', sans-serif;
+    padding-top: 4.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding-top: 6.5rem;
+    }
 }

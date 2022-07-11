@@ -7,6 +7,7 @@
 @import url(./produtos-preco.css);
 @import url(./produtos-texto.css);
 @import url(./produtos-titulo.css);
+@import url(./pgProdutos-produtos-btn--add.css);
 
 .produtos {
     display: flex;

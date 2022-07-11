@@ -8,3 +8,9 @@
     position: relative;
     right: 1rem;
 }
+
+.formContato__submit:hover {
+    background-color: var(--hover-color-prim);
+    color: var(--btn-color);
+    cursor: pointer;
+}

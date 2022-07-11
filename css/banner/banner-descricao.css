@@ -1,0 +1,23 @@
+.banner__descricao {
+    height: 12rem;
+    width: 100%;
+    transition: 1s;
+    display: flex;
+
+}
+
+@media screen and (min-width: 768px) {
+    .banner__descricao {
+
+        height: 9.8125rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .banner__descricao {
+        width: 50%;
+        height: 25.1875rem;
+    }
+}

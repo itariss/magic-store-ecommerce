@@ -1,0 +1,30 @@
+.menu__admin {
+    background: transparent;
+    border: 1px var(--btn-color) solid;
+    color: var(--btn-color);
+    padding: 0.75rem 0;
+    width: 10.375rem;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.menu__admin:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover-sec);
+}
+
+@media screen and (min-width: 768px) {
+    .menu__admin {
+        order: 1;
+        width: 10.375rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .menu__admin {
+        width: 11.375rem;
+    }
+}
