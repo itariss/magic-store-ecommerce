@@ -12,15 +12,15 @@ function setNewImage() {
 	}
 
 	if (screenWidth <= 767) {
-		bannerBg.style.background = `url(../../img/carousel-${imageNum}p.png)center / cover`;
+		bannerBg.style.background = `url(./img/carousel-${imageNum}p.png)center / cover`;
 	}
 
 	if (screenWidth > 767) {
-		bannerBg.style.background = `url(../../img/carousel-${imageNum}m.png)center / cover`;
+		bannerBg.style.background = `url(./img/carousel-${imageNum}m.png)center / cover`;
 	}
 
 	if (screenWidth >= 1440) {
-		bannerBg.style.background = `url(../../img/carousel-${imageNum}.png)center / cover`;
+		bannerBg.style.background = `url(./img/carousel-${imageNum}.png)center / cover`;
 	}
 }
 
