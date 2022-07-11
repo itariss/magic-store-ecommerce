@@ -27,8 +27,13 @@
 	<body>
 		<header class="menu">
 			<nav class="menu__div">
-				<img src="./img/logo.svg" alt="" class="menu__logo" />
-				<button class="menu__login">Login</button>
+				<a href="index.html"
+					><img
+						src="./img/logo.svg"
+						alt="Home link"
+						class="menu__logo"
+				/></a>
+				<a href="login.html" class="menu__login">Login</a>
 				<input
 					type="search"
 					class="menu__search"
@@ -43,23 +48,27 @@
 		<section class="banner">
 			<div class="banner__bg">
 				<div class="banner__conteudo">
-					<h2 class="banner__conteudo__titulo">
+					<h1 class="banner__conteudo__titulo">
 						Dezembro Promocional
-					</h2>
+					</h1>
 					<h3 class="banner__conteudo__subtitulo">
 						Produtos selecionados com até 33% de desconto
 					</h3>
-					<button class="banner__conteudo__btn">Ver Consoles</button>
+					<a href="#consoles" class="banner__conteudo__btn"
+						>Ver Consoles</a
+					>
 				</div>
 			</div>
 		</section>
 
 		<!-- Sessão produtos principais -->
 
-		<section class="produtos">
+		<section id="starwars" class="produtos">
 			<div class="produtos__textos">
 				<h2 class="produtos__titulo">Star Wars</h2>
-				<a class="produtos__link produtos__link--secao" href=""
+				<a
+					class="produtos__link produtos__link--secao"
+					href="produtos.html"
 					>Ver tudo
 					<i class="fa-solid fa-arrow-right"></i>
 				</a>
@@ -142,10 +151,12 @@
 
 		<!-- Sessão produtos principais -->
 
-		<section class="produtos">
+		<section id="consoles" class="produtos">
 			<div class="produtos__textos">
 				<h2 class="produtos__titulo">Consoles</h2>
-				<a class="produtos__link produtos__link--secao" href=""
+				<a
+					class="produtos__link produtos__link--secao"
+					href="produtos.html"
 					>Ver tudo
 					<i class="fa-solid fa-arrow-right"></i>
 				</a>
@@ -228,10 +239,12 @@
 
 		<!-- Sessão produtos diversos -->
 
-		<section class="produtos">
+		<section id="diversos" class="produtos">
 			<div class="produtos__textos">
 				<h2 class="produtos__titulo">Diversos</h2>
-				<a class="produtos__link produtos__link--secao" href=""
+				<a
+					class="produtos__link produtos__link--secao"
+					href="produtos.html"
 					>Ver tudo
 					<i class="fa-solid fa-arrow-right"></i>
 				</a>
@@ -377,5 +390,6 @@
 			<h3 class="rodape__ano">2022</h3>
 		</footer>
 		<script src="./js/carousel.js"></script>
+		<script src="./js/descricao.js"></script>
 	</body>
 </html>
