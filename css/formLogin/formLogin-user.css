@@ -3,10 +3,31 @@
     width: 100%;
     border-radius: 4px;
     border: none;
-    border-bottom: 1px var(--form-border) solid;
+    border-bottom: 2px var(--form-border) solid;
     outline: none;
     padding: 0 1rem;
     margin-bottom: 1rem;
+}
+
+.formLogin__user:focus {
+    border-bottom: 2px var(--btn-color) solid;
+}
+
+.formLogin__label--user {
+    position: absolute;
+    pointer-events: none;
+    flex-basis: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .2s ease all;
+    color: var(--placeholder-color);
+}
+
+.formLogin__user:focus~.formLogin__label--user,
+.formLogin__user:not(:focus):valid~.formLogin__label--user {
+    bottom: 4.575rem;
+    font-size: .75rem;
+    color: var(--btn-color);
 }
 
 @media screen and (min-width: 768px) {
