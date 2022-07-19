@@ -67,33 +67,33 @@
             "nome": "ZYZ",
             "src": "./img/diversa1.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diveros"
+            "categoria": "data-container-diversos"
         },
         {
             "nome": "ZYZ",
             "src": "./img/diversa2.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diveros"
+            "categoria": "data-container-diversos"
         },{
             "nome": "ZYZ",
             "src": "./img/diversa3.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diveros"
+            "categoria": "data-container-diversos"
         },{
             "nome": "ZYZ",
             "src": "./img/diversa4.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diveros"
+            "categoria": "data-container-diversos"
         },{
             "nome": "ZYZ",
             "src": "./img/diversa5.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diveros"
+            "categoria": "data-container-diversos"
         },{
             "nome": "ZYZ",
             "src": "./img/diversa6.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diveros"
+            "categoria": "data-container-diversos"
         }        
 
     ]
