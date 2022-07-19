@@ -1,0 +1,35 @@
+{
+    "produtos": [
+        {
+            "nome": "ZYZ",
+            "src": "./img/principal1.png",
+            "categoria": "data-container-starwars"
+        },
+        {
+            "nome": "ZYZ",
+            "src": "./img/principal2.png",
+            "categoria": "data-container-starwars"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/principal3.png",
+            "categoria": "data-container-starwars"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/principal4.png",
+            "categoria": "data-container-starwars"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/principal5.png",
+            "categoria": "data-container-starwars"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/principal6.png",
+            "categoria": "data-container-starwars"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/principal1.png",
+            "categoria": "data-container-starwars"
+        }
+
+    ]
+}
