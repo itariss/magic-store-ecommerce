@@ -34,10 +34,69 @@
             "categoria": "data-container-starwars"
         },{
             "nome": "ZYZ",
-            "src": "./img/principal1.png",
+            "src": "./img/secundaria1.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-starwars"
+            "categoria": "data-container-console"
+        },
+        {
+            "nome": "ZYZ",
+            "src": "./img/secundaria2.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-console"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/secundaria3.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-console"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/secundaria4.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-console"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/secundaria5.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-console"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/secundaria6.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-console"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/diversa1.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-diveros"
+        },
+        {
+            "nome": "ZYZ",
+            "src": "./img/diversa2.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-diveros"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/diversa3.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-diveros"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/diversa4.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-diveros"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/diversa5.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-diveros"
+        },{
+            "nome": "ZYZ",
+            "src": "./img/diversa6.png",
+            "preco": "R$ 60,00",
+            "categoria": "data-container-diveros"
         }
+
+        
 
     ]
 }
