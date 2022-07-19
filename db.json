@@ -3,31 +3,39 @@
         {
             "nome": "ZYZ",
             "src": "./img/principal1.png",
+            "preco": "R$ 60,00",
             "categoria": "data-container-starwars"
         },
         {
             "nome": "ZYZ",
             "src": "./img/principal2.png",
+            "preco": "R$ 60,00",
+
             "categoria": "data-container-starwars"
         },{
             "nome": "ZYZ",
             "src": "./img/principal3.png",
+            "preco": "R$ 60,00",
             "categoria": "data-container-starwars"
         },{
             "nome": "ZYZ",
             "src": "./img/principal4.png",
+            "preco": "R$ 60,00",
             "categoria": "data-container-starwars"
         },{
             "nome": "ZYZ",
             "src": "./img/principal5.png",
+            "preco": "R$ 60,00",
             "categoria": "data-container-starwars"
         },{
             "nome": "ZYZ",
             "src": "./img/principal6.png",
+            "preco": "R$ 60,00",
             "categoria": "data-container-starwars"
         },{
             "nome": "ZYZ",
             "src": "./img/principal1.png",
+            "preco": "R$ 60,00",
             "categoria": "data-container-starwars"
         }
 
