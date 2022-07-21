@@ -1,10 +1,12 @@
 export const recebeProdutos = async () => {
-	const dadosProdutos = await fetch("http://localhost:3000/produtos");
+	const dadosProdutos = await fetch(
+		"https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/db.json"
+	);
 	const listaProdutos = await dadosProdutos.json();
-	return listaProdutos;
+	return listaProdutos.produtos;
 };
 
-recebeProdutos().then(data => {
+export const criaProduto = data => {
 	data.forEach(produto => {
 		const conteudo = `<div class="produtos__box">
         <img
@@ -27,4 +29,8 @@ recebeProdutos().then(data => {
 
 		return container || section;
 	});
+};
+
+recebeProdutos().then(data => {
+	criaProduto(data);
 });
