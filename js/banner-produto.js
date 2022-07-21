@@ -1,35 +1,26 @@
-let bannerDesc = document.querySelector(".banner__descricao");
-let imagemSrc = JSON.parse(window.sessionStorage.getItem("imagem"));
-let produtosStarWars = document.querySelector("#starwars");
-let produtosConsole = document.querySelector("#consoles");
-let produtosDiversos = document.querySelector("#diversos");
+import { recebeProdutos } from "./criaProduto-box.js";
 
-console.log(imagemSrc);
+recebeProdutos().then(() => {
+	let bannerDesc = document.querySelector(".banner__descricao");
+	let imagemSrc = JSON.parse(window.sessionStorage.getItem("imagem"));
 
-bannerDesc.style.background = `url(${imagemSrc}) center / cover no-repeat`;
+	bannerDesc.style.background = `url(${imagemSrc}) center / cover no-repeat`;
 
-let produtos = document.querySelectorAll(".produtos__img");
+	let produtos = document.querySelectorAll(".produtos__img");
+	let links = document.querySelectorAll(".produtos__link");
 
-produtos.forEach(imagem => {
-	imagem.addEventListener("click", () => {
-		window.location.href = "./descricao.html";
-		window.sessionStorage.setItem("imagem", JSON.stringify(imagem.src));
+	produtos.forEach(imagem => {
+		imagem.addEventListener("click", () => {
+			window.location.href = "./descricao.html";
+			window.sessionStorage.setItem("imagem", JSON.stringify(imagem.src));
+		});
+	});
+	links.forEach(link => {
+		link.addEventListener("click", () => {
+			event.preventDefault();
+			let img = link.closest(".produtos__box").firstElementChild.src;
+			window.location.href = "./descricao.html";
+			window.sessionStorage.setItem("imagem", JSON.stringify(img));
+		});
 	});
 });
-
-console.log(produtosConsole);
-
-if (imagemSrc.includes("principal")) {
-	produtosConsole.style.display = "none";
-	produtosDiversos.style.display = "none";
-}
-
-if (imagemSrc.includes("secundaria")) {
-	produtosDiversos.style.display = "none";
-	produtosStarWars.style.display = "none";
-}
-
-if (imagemSrc.includes("diversa")) {
-	produtosConsole.style.display = "none";
-	produtosStarWars.style.display = "none";
-}
