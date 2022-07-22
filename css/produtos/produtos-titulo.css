@@ -1,6 +1,7 @@
 .produtos__titulo {
     font-size: 1.375rem;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width: 1024px) {

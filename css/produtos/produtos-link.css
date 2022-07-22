@@ -1,17 +1,20 @@
-.produtos__link {
+.produtos__link,
+.produtos__link--secao {
     color: var(--btn-color);
     font-size: .875rem;
     font-weight: 700;
     align-self: flex-end;
 }
 
-.produtos__link:not(.produtos__link--secao) {
+.produtos__link {
     align-self: flex-start;
     margin-bottom: .5rem;
 }
 
 @media screen and (min-width: 768px) {
-    .produtos__link {
+
+    .produtos__link,
+    .produtos__link--secao {
         font-size: 1rem;
     }
 }
