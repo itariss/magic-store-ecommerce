@@ -1,29 +1,33 @@
-import { recebeProdutos } from "./criaProduto-box.js";
+import { serverService } from "./criaProduto-box.js";
+import { linksProdutos } from "./descricaoLinks.js";
 
-export const linksProdutos = () => {
-	let produtos = document.querySelectorAll(".produtos__img");
-	let links = document.querySelectorAll(".produtos__link");
+const imagemBannerDescricao = () => {
+	let bannerDesc = document.querySelector(".banner__descricao");
+	let sessoes = document.querySelectorAll(".produtos");
+	let info = JSON.parse(window.localStorage.getItem("produtoInfo"));
+	let produtosSimilares = document.querySelectorAll(".produtos__box");
 
-	produtos.forEach(imagem => {
-		imagem.addEventListener("click", () => {
-			window.location.href = "./descricao.html";
-			window.sessionStorage.setItem("imagem", JSON.stringify(imagem.src));
-		});
+	console.log(info);
+
+	sessoes.forEach(sessao => {
+		if (info.categoria !== sessao.id) {
+			sessao.style.display = "none";
+		} else {
+			sessao.firstElementChild.firstElementChild.textContent =
+				"Produtos Similares";
+		}
 	});
 
-	links.forEach(link => {
-		link.addEventListener("click", () => {
-			let img = link.closest(".produtos__box").firstElementChild.src;
-			window.location.href = "./descricao.html";
-			window.sessionStorage.setItem("imagem", JSON.stringify(img));
-		});
+	produtosSimilares.forEach(produto => {
+		if (produto.id === info.id) {
+			produto.style.display = "none";
+		}
 	});
+
+	bannerDesc.style.background = `url(${info.imagem}) center / cover no-repeat`;
 };
 
-recebeProdutos().then(() => {
-	let bannerDesc = document.querySelector(".banner__descricao");
-	let imagemSrc = JSON.parse(window.sessionStorage.getItem("imagem"));
-
-	bannerDesc.style.background = `url(${imagemSrc}) center / cover no-repeat`;
+serverService.recebeProdutos().then(() => {
+	imagemBannerDescricao();
 	linksProdutos();
 });

@@ -1,13 +1,31 @@
-import { recebeProdutos } from "./criaProduto-box.js";
+import { serverService } from "./criaProduto-box.js";
+import { linksProdutos } from "./descricaoLinks.js";
 
-recebeProdutos().then(() => {
-	let produtos = document.querySelectorAll(".produtos__img");
+serverService.recebeProdutos().then(() => {
+	let containers = document.querySelectorAll(".produtos__container");
 
-	console.log("clicou");
-	produtos.forEach(imagem => {
-		imagem.addEventListener("click", () => {
-			window.location.href = "./descricao.html";
-			window.sessionStorage.setItem("imagem", JSON.stringify(imagem.src));
-		});
+	const sessaoTodos = document.querySelector(".produtos");
+	console.log(sessaoTodos);
+
+	sessaoTodos.innerHTML = `
+	<div class="produtos__textos">
+		<h1 class="produtos__titulo">Todos produtos</h1>
+		<a class="produtos__btn--add" href="novoProduto.html"
+			>Adicionar produto
+		</a>
+	</div>
+	<div class="produtos__container" data-container-todos>
+</section>`;
+
+	let containerTodos = document.querySelector("[data-container-todos]");
+
+	containers.forEach(container => {
+		let containerCopy = container.innerHTML;
+		containerTodos.innerHTML += containerCopy;
+
+		container.remove();
 	});
+	sessaoTodos.appendChild(containerTodos);
+
+	linksProdutos();
 });
