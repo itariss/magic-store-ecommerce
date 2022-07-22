@@ -4,96 +4,113 @@
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/principal1.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-starwars"
+            "id": 1,
+            "categoria": "star-wars"
         },
         {
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/principal2.png",
             "preco": "R$ 60,00",
-
-            "categoria": "data-container-starwars"
+            "id": 2,
+            "categoria": "star-wars"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/principal3.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-starwars"
+            "id": 3,
+            "categoria": "star-wars"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/principal4.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-starwars"
+            "id": 4,
+            "categoria": "star-wars"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/principal5.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-starwars"
+            "id": 5,
+            "categoria": "star-wars"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/principal6.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-starwars"
+            "id": 6,
+            "categoria": "star-wars"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/secundaria1.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-console"
+            "id": 7,
+            "categoria": "console"
         },
         {
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/secundaria2.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-console"
+            "id": 8,
+            "categoria": "console"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/secundaria3.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-console"
+            "id": 9,
+            "categoria": "console"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/secundaria4.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-console"
+            "id": 10,
+            "categoria": "console"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/secundaria5.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-console"
+            "id": 11,
+            "categoria": "console"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/secundaria6.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-console"
+            "id": 12,
+            "categoria": "console"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/diversa1.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diversos"
+            "id": 13,
+            "categoria": "diversos"
         },
         {
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/diversa2.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diversos"
+            "id": 14,
+            "categoria": "diversos"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/diversa3.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diversos"
+            "id": 15,
+            "categoria": "diversos"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/diversa4.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diversos"
+            "id": 16,
+            "categoria": "diversos"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/diversa5.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diversos"
+            "id": 17,
+            "categoria": "diversos"
         },{
             "nome": "ZYZ",
             "src": "https://raw.githubusercontent.com/itariss/challenge-one-ecommerce/main/img/diversa6.png",
             "preco": "R$ 60,00",
-            "categoria": "data-container-diversos"
+            "id": 18,
+            "categoria": "diversos"
         }        
 
     ]
