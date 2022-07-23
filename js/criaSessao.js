@@ -24,9 +24,10 @@ export const criaSessaoCategoria = data => {
 			</div>
 		</section>`;
 			const sessaoProdutos = document.querySelector(".produtos-wrapper");
-			sessaoProdutos.innerHTML += sessaoCategoria;
 
-			return sessaoProdutos;
+			return sessaoProdutos
+				? (sessaoProdutos.innerHTML += sessaoCategoria)
+				: null;
 		}
 	});
 };

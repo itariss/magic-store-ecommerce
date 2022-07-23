@@ -1,13 +1,14 @@
 import { criaSessaoCategoria } from "./criaSessao.js";
 
 export const recebeProdutos = async () => {
-	const dadosProdutos = await fetch("http://localhost:3000/produtos");
-	const listaProdutos = await dadosProdutos.json();
-	window.localStorage.setItem("listaProdutos", JSON.stringify(listaProdutos));
-	const todosProdutos = JSON.parse(
-		window.localStorage.getItem("listaProdutos")
+	const dadosProdutos = await fetch(
+		"https://my-json-server.typicode.com/itariss/challenge-one-ecommerce/produtos"
 	);
-	return todosProdutos;
+	const listaProdutos =
+		JSON.parse(window.localStorage.getItem("listaProdutos")) ||
+		(await dadosProdutos.json());
+	window.localStorage.setItem("listaProdutos", JSON.stringify(listaProdutos));
+	return listaProdutos;
 };
 
 export const criaProduto = data => {
@@ -29,9 +30,7 @@ export const criaProduto = data => {
 			`[data-container-${produto.categoria}]`
 		);
 
-		container.innerHTML += conteudo;
-
-		return container;
+		return container ? (container.innerHTML += conteudo) : null;
 	});
 };
 
