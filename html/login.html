@@ -47,27 +47,30 @@
 
 		<!-- Formulário Login -->
 
-		<form action="" class="formLogin">
+		<section action="" class="formLogin">
 			<h1 class="formLogin__titulo">Iniciar Sessão</h1>
-			<input
-				type="email"
-				id="user"
-				class="formLogin__user"
-				autocomplete="off"
-				required
-			/>
-			<label for="email" class="formLogin__label--user">Email</label>
-			<input
-				type="password"
-				id="password"
-				class="formLogin__password"
-				required
-			/>
-			<label for="password" class="formLogin__label--password"
-				>Senha</label
-			>
-			<button type="submit" class="formLogin__submit">Entrar</button>
-		</form>
+			<form action="" class="formLogin__form" data-form-login>
+				<input
+					type="email"
+					id="user"
+					class="formLogin__user"
+					autocomplete="off"
+					required
+				/>
+				<label for="email" class="formLogin__label--user">Email</label>
+				<input
+					type="password"
+					id="password"
+					class="formLogin__password"
+					required
+					data-form-login-user
+				/>
+				<label for="password" class="formLogin__label--password"
+					>Senha</label
+				>
+				<button type="submit" class="formLogin__submit">Entrar</button>
+			</form>
+		</section>
 
 		<!-- Formulário e Faq -->
 
@@ -84,6 +87,7 @@
 						<a href="" class="faq__link">Quem somos nós</a>
 					</li>
 					<li class="faq__item">
+						data-form-login
 						<a href="" class="faq__link">Política de privacidade</a>
 					</li>
 					<li class="faq__item">
@@ -112,7 +116,7 @@
 				<textarea
 					name=""
 					id="mensagem"
-					class="formContato__mensagem"
+					class="formContato__mendata-form-loginsagem"
 					required
 				></textarea>
 				<label for="mensagem" class="formContato__label--mensagem"
@@ -134,5 +138,6 @@
 			</h2>
 			<h3 class="rodape__ano">2022</h3>
 		</footer>
+		<script src="../js/forms/formLogin.js"></script>
 	</body>
 </html>

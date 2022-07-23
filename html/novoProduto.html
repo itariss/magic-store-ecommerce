@@ -50,27 +50,78 @@
 
 		<section class="formProduto">
 			<h1 class="formProduto__titulo">Adicionar novo produto</h1>
-			<input type="file" class="formProduto__imagem" name="" id="" />
-			<input type="text" class="formProduto__categoria" /><input
-				type="text"
-				name=""
-				id=""
-				class="formProduto__nome"
-			/><input
-				type="text"
-				name=""
-				id=""
-				class="formProduto__preco"
-			/><textarea
-				name=""
-				id=""
-				cols="30"
-				rows="10"
-				class="formProduto__descricao"
-			></textarea
-			><button type="submit" class="formProduto__submit">
-				Adicionar Produto
-			</button>
+			<!-- Campo imagem -->
+			<form class="formProduto__form" id="produtoForm" data-form-produto>
+				<input
+					type="url"
+					class="formProduto__imagem"
+					name="produto-imagem"
+					id="produtoImagem"
+					required
+					data-form-produto-imagem
+				/>
+				<label for="produtoImagem" class="formProduto__label--imagem"
+					>URL da Imagem</label
+				>
+				<!-- Campo categoria -->
+
+				<input
+					type="text"
+					class="formProduto__categoria"
+					name="produto-categoria"
+					id="produtoCategoria"
+					required
+					data-form-produto-categoria
+				/>
+				<label
+					for="produtoCategoria"
+					class="formProduto__label--categoria"
+					>Categoria</label
+				>
+				<input
+					type="text"
+					class="formProduto__nome"
+					name="produto-nome"
+					id="produtoNome"
+					required
+					data-form-produto-nome
+				/>
+				<label for="produtoNome" class="formProduto__label--nome"
+					>Nome do Produto</label
+				>
+				<!-- Campo preço -->
+
+				<input
+					type="text"
+					name="produto-preco"
+					id="produtoPreco"
+					class="formProduto__preco"
+					required
+					data-form-produto-preco
+				/>
+				<label for="produtoPreco" class="formProduto__label--preco"
+					>Preço</label
+				>
+				<!-- Campo descrição -->
+
+				<textarea
+					name="produto-descricao"
+					id="produtoDescricao"
+					cols="30"
+					rows="10"
+					class="formProduto__descricao"
+					required
+					data-form-produto-descricao
+				></textarea>
+				<label
+					for="produtoDescricao"
+					class="formProduto__label--descricao"
+					>Descrição</label
+				>
+				<button type="submit" class="formProduto__submit">
+					Adicionar Produto
+				</button>
+			</form>
 		</section>
 
 		<!-- Formulário e Faq -->
@@ -138,5 +189,6 @@
 			</h2>
 			<h3 class="rodape__ano">2022</h3>
 		</footer>
+		<script type="module" src="../js/services/novoProduto.js"></script>
 	</body>
 </html>
