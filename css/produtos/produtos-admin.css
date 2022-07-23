@@ -1,0 +1,11 @@
+.produtos__admin {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    top: 1.725rem;
+    z-index: 1;
+
+}

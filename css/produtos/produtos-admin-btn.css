@@ -1,0 +1,8 @@
+.produtos__admin__btn {
+    color: var(--pure-white);
+    font-size: 0.875rem;
+}
+
+.produtos__admin__btn:last-of-type {
+    margin-right: 1.5rem;
+}
