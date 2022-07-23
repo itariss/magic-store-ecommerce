@@ -6,12 +6,12 @@
 }
 
 .produtos__img:hover {
-    cursor: pointer;
     position: relative;
-    bottom: 3px;
-    right: 3px;
+    cursor: pointer;
     border-bottom: 3px var(--btn-color) solid;
     border-left: 3px var(--btn-color) solid;
+    animation-name: pulse;
+    animation-duration: .8s;
 }
 
 @media screen and (min-width: 688px) {

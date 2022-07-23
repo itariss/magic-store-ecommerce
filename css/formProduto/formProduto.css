@@ -3,6 +3,7 @@
 @import url(./formProduto-inputs.css);
 @import url(./formProduto-descricao.css);
 @import url(./formProduto-submit.css);
+@import url(./formProduto-form.css);
 
 .formProduto {
     background-color: var(--bg-general);

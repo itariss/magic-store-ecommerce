@@ -14,20 +14,22 @@
 }
 
 .formLogin__label--user {
-    position: absolute;
+    position: relative;
     pointer-events: none;
-    flex-basis: 1rem;
     font-size: 1rem;
     font-weight: 400;
-    transition: .2s ease all;
+    transition: 0.2s ease all;
+    width: 100%;
     color: var(--placeholder-color);
+    bottom: 3.275rem;
+    left: 1rem;
 }
 
 .formLogin__user:focus~.formLogin__label--user,
 .formLogin__user:not(:focus):valid~.formLogin__label--user {
-    bottom: 4.575rem;
     font-size: .75rem;
     color: var(--btn-color);
+    bottom: 4.525rem;
 }
 
 @media screen and (min-width: 768px) {

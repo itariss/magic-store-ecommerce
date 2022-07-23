@@ -2,6 +2,7 @@
 @import url(./formLogin-user.css);
 @import url(./formLogin-password.css);
 @import url(./formLogin-submit.css);
+@import url(./formLogin-form.css);
 
 .formLogin {
     background-color: var(--bg-general);

@@ -13,6 +13,26 @@
     border-bottom: 2px var(--btn-color) solid;
 }
 
+.formProduto__label--descricao {
+    position: relative;
+    pointer-events: none;
+    flex-basis: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .2s ease all;
+    color: var(--placeholder-color);
+    bottom: 6.125rem;
+    left: 1rem;
+}
+
+.formProduto__descricao:focus~.formProduto__label--descricao,
+.formProduto__descricao:not(:focus):valid~.formProduto__label--descricao {
+    font-size: .75rem;
+    color: var(--btn-color);
+    bottom: 7.725rem;
+}
+
+
 @media screen and (min-width: 1024px) {
 
     .formProduto__descricao {

@@ -4,8 +4,7 @@
     display: flex;
 }
 
-.produtos__box:nth-of-type(5),
-.produtos__box:nth-of-type(6) {
+.produtos__box:nth-of-type(1n + 5) {
     display: none;
 }
 

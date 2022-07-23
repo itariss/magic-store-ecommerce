@@ -9,6 +9,30 @@
     margin-bottom: 1rem;
 }
 
+
+.formProduto__imagem:focus {
+    border-bottom: 2px var(--btn-color) solid;
+}
+
+.formProduto__label--imagem {
+    position: relative;
+    pointer-events: none;
+    flex-basis: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .2s ease all;
+    color: var(--placeholder-color);
+    bottom: 3.275rem;
+    left: 1rem;
+}
+
+.formProduto__imagem:focus~.formProduto__label--imagem,
+.formProduto__imagem:not(:focus):valid~.formProduto__label--imagem {
+    font-size: .75rem;
+    color: var(--btn-color);
+    bottom: 4.125rem;
+}
+
 @media screen and (min-width: 1024px) {
 
     .formProduto__imagem {
