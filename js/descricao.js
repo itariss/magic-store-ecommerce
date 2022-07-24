@@ -1,4 +1,5 @@
 import { serverService } from "./criaProduto-box.js";
+import { buscaDados } from "./services/buscaDados.js";
 
 serverService.recebeProdutos().then(() => {
 	let produtos = document.querySelectorAll(".produtos__img");
@@ -6,43 +7,24 @@ serverService.recebeProdutos().then(() => {
 
 	produtos.forEach(imagem => {
 		imagem.addEventListener("click", () => {
-			let id = imagem.closest(".produtos__box").id;
-			let img = imagem.src;
-			let sessao =
-				imagem.closest(".produtos__box").parentElement.parentElement.id;
-
-			const descricaoInfo = {
-				id: id,
-				imagem: img,
-				categoria: sessao
-			};
-			window.location.href = "./html/descricao.html";
+			console.log(buscaDados(imagem));
 			window.localStorage.setItem(
 				"produtoInfo",
-				JSON.stringify(descricaoInfo)
+				JSON.stringify(buscaDados(imagem))
 			);
+			window.location.href = "./html/descricao.html";
 		});
 	});
 
 	links.forEach(link => {
 		link.addEventListener("click", event => {
 			event.preventDefault();
-			let img = link.closest(".produtos__box").firstElementChild.src;
-			let id = link.closest(".produtos__box").id;
-			let sessao =
-				link.closest(".produtos__box").parentElement.parentElement.id;
-
-			const descricaoInfo = {
-				id: id,
-				imagem: img,
-				categoria: sessao
-			};
-
-			window.location.href = "./html/descricao.html";
+			console.log(buscaDados(link));
 			window.localStorage.setItem(
 				"produtoInfo",
-				JSON.stringify(descricaoInfo)
+				JSON.stringify(buscaDados(link))
 			);
+			window.location.href = "./html/descricao.html";
 		});
 	});
 });

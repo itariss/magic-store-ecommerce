@@ -1,5 +1,3 @@
-import { serverService } from "../criaProduto-box.js";
-
 const formProduto = document.querySelector("[data-form-produto]");
 
 formProduto.addEventListener("submit", event => {
@@ -30,8 +28,6 @@ formProduto.addEventListener("submit", event => {
 	};
 
 	const id = findId();
-
-	console.log(nome, img, preco, id, categoria, descricao);
 
 	novoProduto(nome, img, preco, id, categoria, descricao);
 	window.location.href = "./admin.html";

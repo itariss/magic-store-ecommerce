@@ -3,8 +3,6 @@ let imageNum = "1";
 
 let screenWidth = window.innerWidth;
 
-console.log(screenWidth);
-
 function setNewImage() {
 	imageNum++;
 	if (imageNum > 3) {

@@ -1,8 +1,19 @@
 export const criaSessaoCategoria = data => {
 	const sessoes = [];
 	const re = /-/g;
+
+	const htmlDoc = () => {
+		if (window.location.pathname.split("/").pop() === "index.html") {
+			return "html/";
+		} else {
+			return "";
+		}
+	};
 	data.forEach(produto => {
-		if (sessoes.includes(`${produto.categoria}`)) {
+		if (
+			sessoes.includes(`${produto.categoria}`) ||
+			produto.id === "inativo"
+		) {
 			return;
 		} else {
 			sessoes.push(`${produto.categoria}`);
@@ -13,7 +24,7 @@ export const criaSessaoCategoria = data => {
 				<h2 class="produtos__titulo">${produto.categoria.replace(re, " ")}</h2>
 				<a
 					class="produtos__link--secao"
-					href="./html/produtos.html"
+					href="./${htmlDoc()}produtos.html"
 					>Ver tudo
 					<i class="fa-solid fa-arrow-right"></i>
 				</a>
