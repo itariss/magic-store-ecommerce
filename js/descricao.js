@@ -7,12 +7,12 @@ serverService.recebeProdutos().then(() => {
 
 	produtos.forEach(imagem => {
 		imagem.addEventListener("click", () => {
-			console.log(buscaDados(imagem));
 			window.localStorage.setItem(
 				"produtoInfo",
 				JSON.stringify(buscaDados(imagem))
 			);
-			window.location.href = "./html/descricao.html";
+			let id = buscaDados(imagem).id;
+			window.location.href = `./html/descricao.html?id=${id}`;
 		});
 	});
 
@@ -24,7 +24,8 @@ serverService.recebeProdutos().then(() => {
 				"produtoInfo",
 				JSON.stringify(buscaDados(link))
 			);
-			window.location.href = "./html/descricao.html";
+			let id = buscaDados(link).id;
+			window.location.href = `./html/descricao.html?id=${id}`;
 		});
 	});
 });

@@ -13,20 +13,20 @@ export const linksProdutos = () => {
 				"produtoInfo",
 				JSON.stringify(buscaDados(imagem))
 			);
-			window.location.href = "./descricao.html";
+			let id = buscaDados(imagem).id;
+			window.location.href = `./descricao.html?id=${id}`;
 		});
 	});
 
 	links.forEach(link => {
 		link.addEventListener("click", event => {
 			event.preventDefault();
-			console.log(buscaDados(link));
-
 			window.localStorage.setItem(
 				"produtoInfo",
 				JSON.stringify(buscaDados(link))
 			);
-			window.location.href = "./descricao.html";
+			let id = buscaDados(link).id;
+			window.location.href = `./descricao.html?id=${id}`;
 		});
 	});
 };

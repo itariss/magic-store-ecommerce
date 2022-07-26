@@ -5,9 +5,11 @@ export const recebeProdutos = async () => {
 	const dadosProdutos = await fetch(
 		"https://my-json-server.typicode.com/itariss/challenge-one-ecommerce/produtos"
 	);
+
 	const listaProdutos =
 		JSON.parse(window.localStorage.getItem("listaProdutos")) ||
 		(await dadosProdutos.json());
+
 	window.localStorage.setItem("listaProdutos", JSON.stringify(listaProdutos));
 	return listaProdutos;
 };
@@ -23,7 +25,7 @@ export const criaProduto = data => {
 				<div class="produtos__conteudo">
 					<h2 class="produtos__nome">${produto.nome}</h2>
 					<h2 class="produtos__preco">${produto.preco}</h2>
-					<a href="" class="produtos__link">Ver Produto</a>
+					<a href="./html/descricao.html?id=${produto.id}" class="produtos__link">Ver Produto</a>
 				</div>
 			</div>`;
 
