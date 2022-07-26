@@ -37,7 +37,7 @@ const toEdit = editInfo => {
 	img.value = editInfo.imagem;
 	preco.value = editInfo.preco;
 	categoria.value = editInfo.categoria;
-	descricao.value - editInfo.descricao;
+	descricao.value = editInfo.descricao;
 
 	return id;
 };
