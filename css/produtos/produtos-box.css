@@ -15,15 +15,19 @@
 }
 
 @media screen and (min-width: 1224px) {
-    .produtos__box:nth-of-type(5) {
+    .produtos__box:nth-of-type(1n +5):not(.none) {
         display: block;
     }
 }
 
 @media screen and (min-width: 1440px) {
 
-    .produtos__box:nth-of-type(6) {
+    .produtos__box:nth-of-type(1n + 6):not(.none) {
         display: block;
     }
 
+}
+
+.none {
+    display: none;
 }
