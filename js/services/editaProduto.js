@@ -9,7 +9,7 @@ export const botaoEdita = botoes => {
 				"edit",
 				JSON.stringify(buscaDados(thisId))
 			);
-			window.location.href = "../../html/editaProduto.html";
+			window.location.href = `../../html/editaProduto.html?id=${thisId.id}`;
 		});
 	});
 };
