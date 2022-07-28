@@ -1,3 +1,4 @@
+import { htmlDoc } from "./pageLocation.js";
 import { buscaDados } from "./services/buscaDados.js";
 
 export const linksProdutos = () => {
@@ -5,7 +6,9 @@ export const linksProdutos = () => {
 	let links = document.querySelectorAll(".produtos__link");
 	let linkTodosProdutos = document.querySelector(".produtos__link--secao");
 
-	linkTodosProdutos ? (linkTodosProdutos.href = "./produtos.html") : null;
+	linkTodosProdutos
+		? (linkTodosProdutos.href = `./${htmlDoc()}produtos.html`)
+		: null;
 
 	produtos.forEach(imagem => {
 		imagem.addEventListener("click", () => {
@@ -14,7 +17,7 @@ export const linksProdutos = () => {
 				JSON.stringify(buscaDados(imagem))
 			);
 			let id = buscaDados(imagem).id;
-			window.location.href = `./descricao.html?id=${id}`;
+			window.location.href = `./${htmlDoc()}descricao.html?id=${id}`;
 		});
 	});
 
@@ -26,7 +29,7 @@ export const linksProdutos = () => {
 				JSON.stringify(buscaDados(link))
 			);
 			let id = buscaDados(link).id;
-			window.location.href = `./descricao.html?id=${id}`;
+			window.location.href = `./${htmlDoc()}descricao.html?id=${id}`;
 		});
 	});
 };

@@ -1,14 +1,9 @@
+import { htmlDoc } from "./pageLocation.js";
+
 export const criaSessaoCategoria = data => {
 	const sessoes = [];
 	const re = /-/g;
 
-	const htmlDoc = () => {
-		if (window.location.pathname.split("/").pop() === "index.html") {
-			return "html/";
-		} else {
-			return "";
-		}
-	};
 	data.forEach(produto => {
 		if (
 			sessoes.includes(`${produto.categoria}`) ||

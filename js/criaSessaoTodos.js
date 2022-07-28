@@ -1,12 +1,14 @@
-import { serverService } from "./criaProduto-box.js";
+import { serverService } from "./serverService.js";
 
 export const criaTodosProdutos = async () => {
-	serverService.recebeProdutos().then(() => {
-		let containers = document.querySelectorAll(".produtos__container");
+	const dadosProdutos = await serverService.recebeProdutos();
+	serverService.criaSessaoCategoria(dadosProdutos);
+	serverService.criaProduto(dadosProdutos);
+	let containers = document.querySelectorAll(".produtos__container");
 
-		const sessaoTodos = document.querySelector(".produtos");
+	const sessaoTodos = document.querySelector(".produtos");
 
-		sessaoTodos.innerHTML = `
+	sessaoTodos.innerHTML = `
 	<div class="produtos__textos">
 		<h1 class="produtos__titulo">Todos produtos</h1>
 		<a class="produtos__btn--add" href="./novoProduto.html"
@@ -16,14 +18,13 @@ export const criaTodosProdutos = async () => {
 	<div class="produtos__container" data-container-todos>
 </section>`;
 
-		let containerTodos = document.querySelector("[data-container-todos]");
+	let containerTodos = document.querySelector("[data-container-todos]");
 
-		containers.forEach(container => {
-			let containerCopy = container.innerHTML;
-			containerTodos.innerHTML += containerCopy;
+	containers.forEach(container => {
+		let containerCopy = container.innerHTML;
+		containerTodos.innerHTML += containerCopy;
 
-			container.remove();
-		});
-		sessaoTodos.appendChild(containerTodos);
+		container.remove();
 	});
+	sessaoTodos.appendChild(containerTodos);
 };

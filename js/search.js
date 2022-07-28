@@ -1,4 +1,4 @@
-import { recebeProdutos } from "./criaProduto-box.js";
+import { recebeProdutos } from "./recebeDadosProdutos.js";
 
 const searchInput = document.querySelector("[data-menu-search]");
 

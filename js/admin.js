@@ -1,8 +1,7 @@
-import { criaTodosProdutos } from "./criaSessaoTodos.js";
 import { botaoDeleta } from "./services/deletaProduto.js";
 import { botaoEdita } from "./services/editaProduto.js";
 
-const criaAdminBtns = () => {
+export const criaAdminBtns = () => {
 	const adminProdutos = document.querySelectorAll(".produtos__box");
 
 	adminProdutos.forEach(produto => {
@@ -20,7 +19,3 @@ const criaAdminBtns = () => {
 
 	return adminProdutos;
 };
-
-criaTodosProdutos().then(() => {
-	setTimeout(criaAdminBtns, 1000);
-});
