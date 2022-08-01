@@ -5,7 +5,12 @@ export const criaProduto = data => {
 					src="${produto.src}"
 					alt=""
 					class="produtos__img"
-			/ >
+				/ >
+				<img
+					src="${produto.src}"
+					alt=""
+					class="produtos__img--zoom"
+				/ >
 				<div class="produtos__conteudo">
 					<h2 class="produtos__nome">${produto.nome}</h2>
 					<h2 class="produtos__preco">${produto.preco}</h2>
@@ -16,8 +21,7 @@ export const criaProduto = data => {
 		const container = document.querySelector(
 			`[data-container-${produto.categoria}]`
 		);
-		return container && produto.id !== "inativo"
-			? (container.innerHTML += conteudo)
-			: null;
+
+		return container ? (container.innerHTML += conteudo) : null;
 	});
 };

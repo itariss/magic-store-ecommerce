@@ -1,3 +1,4 @@
+import { userOrAdmin } from "./pageLocation.js";
 import { serverService } from "./serverService.js";
 
 export const criaTodosProdutos = async () => {
@@ -11,9 +12,7 @@ export const criaTodosProdutos = async () => {
 	sessaoTodos.innerHTML = `
 	<div class="produtos__textos">
 		<h1 class="produtos__titulo">Todos produtos</h1>
-		<a class="produtos__btn--add" href="./novoProduto.html"
-			>Adicionar produto
-		</a>
+		${userOrAdmin()}
 	</div>
 	<div class="produtos__container" data-container-todos>
 </section>`;

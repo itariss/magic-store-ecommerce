@@ -1,19 +1,22 @@
+import { formContatoValidity } from "../forms/formContato.js";
+import { serverService } from "../serverService.js";
+import { novoProduto } from "./novosDados.js";
+
 const formProduto = document.querySelector("[data-form-produto]");
 
-formProduto.addEventListener("submit", event => {
+formProduto.addEventListener("submit", async event => {
 	event.preventDefault();
-	const nome = event.target.querySelector("[data-form-produto-nome]").value;
-	const img = event.target.querySelector("[data-form-produto-imagem]").value;
-	const preco = event.target.querySelector("[data-form-produto-preco]").value;
+	const nome = event.target.querySelector("[data-form-produto-nome]");
+	const img = event.target.querySelector("[data-form-produto-imagem]");
+	const preco = event.target.querySelector("[data-form-produto-preco]");
 	const categoria = event.target.querySelector(
 		"[data-form-produto-categoria]"
-	).value;
+	);
 	const descricao = event.target.querySelector(
 		"[data-form-produto-descricao]"
-	).value;
+	);
 
-	let ids = JSON.parse(window.localStorage.getItem("listaProdutos"));
-	console.log(ids);
+	let ids = await serverService.recebeProdutos();
 
 	const findId = () => {
 		let counter = 1;
@@ -29,33 +32,21 @@ formProduto.addEventListener("submit", event => {
 
 	const id = findId();
 
-	novoProduto(nome, img, preco, id, categoria, descricao);
+	const expPreco = /[\d]+,[\d]/;
+
+	if (preco.value.test(expPreco)) {
+		preco.setCustomValidity("Somente números e vírgula");
+	}
+
+	novoProduto(
+		nome.value,
+		img.value,
+		preco.value,
+		id.value,
+		categoria.value,
+		descricao.value
+	);
 	window.location.href = "./admin.html";
 });
 
-export const novoProduto = async (
-	nome,
-	img,
-	preco,
-	id,
-	categoria,
-	descricao
-) => {
-	const novoProduto = {
-		nome: nome,
-		src: img,
-		preco: preco,
-		id: id,
-		categoria: categoria,
-		descricao: descricao
-	};
-	const todosProdutos = JSON.parse(
-		window.localStorage.getItem("listaProdutos")
-	);
-
-	todosProdutos.push(novoProduto);
-	return window.localStorage.setItem(
-		"listaProdutos",
-		JSON.stringify(todosProdutos)
-	);
-};
+formContatoValidity();

@@ -1,27 +1,25 @@
-export const editaDados = (target, editInfo) => {
-	const todosProdutos = JSON.parse(
-		window.localStorage.getItem("listaProdutos")
-	);
-	let id = target;
-	todosProdutos.forEach(produto => {
-		if (id == produto.id) {
-			produto.nome = editInfo.nome;
-			produto.src = editInfo.imagem;
-			produto.categoria = editInfo.categoria;
-			produto.preco = editInfo.preco;
-			produto.descricao = editInfo.descricao;
-		}
+import { formContatoValidity } from "../forms/formContato.js";
+
+export const editaDados = async (id, editInfo) => {
+	const produtoEditado = await fetch(`http://localhost:3000/produtos/${id}`, {
+		method: "PUT",
+		headers: {
+			"Content-type": "application/json"
+		},
+		body: JSON.stringify({
+			nome: editInfo.nome,
+			src: editInfo.imagem,
+			categoria: editInfo.categoria,
+			preco: editInfo.preco,
+			descricao: editInfo.descricao
+		})
 	});
-	console.log(todosProdutos);
-	return window.localStorage.setItem(
-		"listaProdutos",
-		JSON.stringify(todosProdutos)
-	);
+	return produtoEditado.body;
 };
 
 window.addEventListener("load", () => {
 	const edicaoProduto =
-		JSON.parse(window.localStorage.getItem("edit")) || null;
+		JSON.parse(window.localStorage.getItem("produtoInfo")) || null;
 	edicaoProduto ? toEdit(edicaoProduto) : null;
 });
 
@@ -32,14 +30,11 @@ const toEdit = editInfo => {
 	const categoria = document.querySelector("[data-form-produto-categoria]");
 	const descricao = document.querySelector("[data-form-produto-descricao]");
 
-	const id = editInfo.id;
 	nome.value = editInfo.nome;
 	img.value = editInfo.imagem;
 	preco.value = editInfo.preco;
 	categoria.value = editInfo.categoria;
 	descricao.value = editInfo.descricao;
-
-	return id;
 };
 
 const formProduto = document.querySelector("[data-form-produto]");
@@ -56,7 +51,7 @@ formProduto.addEventListener("submit", event => {
 		"[data-form-produto-descricao]"
 	).value;
 
-	const id = JSON.parse(window.localStorage.getItem("edit")).id;
+	const id = JSON.parse(window.localStorage.getItem("produtoInfo")).id;
 	const produtoEditado = {
 		nome: nome,
 		imagem: img,
@@ -65,9 +60,9 @@ formProduto.addEventListener("submit", event => {
 		descricao: descricao
 	};
 
-	console.log(id, produtoEditado);
-
 	editaDados(id, produtoEditado);
 
 	window.location.href = "./admin.html";
 });
+
+formContatoValidity();

@@ -1,12 +1,13 @@
 export const recebeProdutos = async () => {
-	const dadosProdutos = await fetch(
-		"https://my-json-server.typicode.com/itariss/challenge-one-ecommerce/produtos"
-	);
-
-	const listaProdutos =
-		JSON.parse(window.localStorage.getItem("listaProdutos")) ||
-		(await dadosProdutos.json());
-
-	window.localStorage.setItem("listaProdutos", JSON.stringify(listaProdutos));
-	return listaProdutos;
+	try {
+		const dadosProdutos = await fetch("http://localhost:3000/produtos");
+		const listaProdutos = await dadosProdutos.json();
+		return listaProdutos;
+	} catch {
+		const dadosProdutos = await fetch(
+			"https://my-json-server.typicode.com/itariss/challenge-one-ecommerce/produtos"
+		);
+		const listaProdutos = await dadosProdutos.json();
+		return listaProdutos;
+	}
 };

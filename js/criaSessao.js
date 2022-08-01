@@ -5,10 +5,7 @@ export const criaSessaoCategoria = data => {
 	const re = /-/g;
 
 	data.forEach(produto => {
-		if (
-			sessoes.includes(`${produto.categoria}`) ||
-			produto.id === "inativo"
-		) {
+		if (sessoes.includes(`${produto.categoria}`)) {
 			return;
 		} else {
 			sessoes.push(`${produto.categoria}`);
@@ -24,7 +21,9 @@ export const criaSessaoCategoria = data => {
 					<i class="fa-solid fa-arrow-right"></i>
 				</a>
 			</div>
-			<div class="produtos__container animate__animated animate__slideInRight" data-container-${
+			<div id="${
+				produto.categoria
+			}"class="produtos__container animate__animated animate__slideInRight" data-container-${
 				produto.categoria
 			}>
 			</div>

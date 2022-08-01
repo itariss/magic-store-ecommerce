@@ -1,32 +1,28 @@
-export const buscaDados = target => {
-	const todosProdutos = JSON.parse(
-		window.localStorage.getItem("listaProdutos")
-	);
-	let id = target.closest(".produtos__box").id;
-	let img;
-	let sessao;
-	let preco;
-	let descricao;
-	let nome;
+import { serverService } from "../serverService.js";
 
-	todosProdutos.forEach(produto => {
-		if (id == produto.id) {
-			sessao = produto.categoria;
-			img = produto.src;
-			preco = produto.preco;
-			nome = produto.nome;
-			descricao = produto.descricao || null;
-		}
-	});
+export const buscaDados = async id => {
+	const listaProdutos = await serverService.recebeProdutos();
+	// const todosProdutos = JSON.parse(
+	// 	window.localStorage.getItem("listaProdutos")
+	// );
 
-	const descricaoInfo = {
-		id: id,
-		nome: nome,
-		imagem: img,
-		categoria: sessao,
-		preco: preco,
-		descricao: descricao
+	const descricaoInfo = {};
+
+	const comparaIds = dados => {
+		dados.forEach(produto => {
+			if (id == produto.id) {
+				descricaoInfo.nome = produto.nome;
+				descricaoInfo.imagem = produto.src;
+				descricaoInfo.id = produto.id;
+				descricaoInfo.preco = produto.preco;
+				descricaoInfo.categoria = produto.categoria;
+				descricaoInfo.descricao = produto.descricao || null;
+			}
+		});
+		return descricaoInfo;
 	};
 
-	return descricaoInfo;
+	const info = comparaIds(listaProdutos);
+
+	return window.localStorage.setItem("produtoInfo", JSON.stringify(info));
 };

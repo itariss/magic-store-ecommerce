@@ -1,4 +1,4 @@
-import { apagaDados } from "./apagaDados.js";
+import { apagaDados } from "./deletaDados.js";
 
 export const botaoDeleta = botoes => {
 	const id = botoes.forEach(botao => {
@@ -6,14 +6,10 @@ export const botaoDeleta = botoes => {
 			if (!confirm(`Tem certeza que deseja excluir esse produto?`)) {
 				return;
 			}
-			let thisId = botao.closest(".produtos__box");
-			apagaDados(thisId);
-			remove(thisId);
-			return thisId;
+			let id = botao.closest(".produtos__box");
+			apagaDados(id.id);
+			id.remove();
+			return id;
 		});
 	});
 };
-
-function remove(id) {
-	id.remove();
-}
