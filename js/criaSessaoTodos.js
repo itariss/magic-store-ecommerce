@@ -25,5 +25,15 @@ export const criaTodosProdutos = async () => {
 
 		container.remove();
 	});
+	removeLinks();
 	sessaoTodos.appendChild(containerTodos);
+};
+
+export const removeLinks = () => {
+	const productBoxes = document.querySelectorAll(".produtos__box");
+
+	productBoxes.forEach(box => {
+		let link = box.lastElementChild.lastElementChild;
+		link.outerHTML = `<p>ID: #${box.id}</p>`;
+	});
 };

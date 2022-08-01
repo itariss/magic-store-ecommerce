@@ -19,7 +19,11 @@ export const imagemBannerDescricao = () => {
 		}
 	});
 
-	bannerDesc.style.background = `url(${info.imagem}) center / cover no-repeat`;
+	bannerDesc.innerHTML = `<img src="${info.imagem}" class="banner__img" data-banner-img/>`;
+
+	const bannerImage = document.querySelector("[data-banner-img]");
+
+	zoomInOut(bannerImage);
 
 	criaDescricao(info);
 };
@@ -48,4 +52,11 @@ const criaDescricao = info => {
 	const descricaoContainer = document.querySelector("[data-descricao]");
 
 	return (descricaoContainer.innerHTML = conteudo);
+};
+
+const zoomInOut = element => {
+	element.addEventListener("click", () => {
+		console.log("ouviu?");
+		element.classList.toggle("banner__img--Zoom");
+	});
 };

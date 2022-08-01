@@ -32,10 +32,11 @@ formProduto.addEventListener("submit", async event => {
 
 	const id = findId();
 
-	const expPreco = /[\d]+,[\d]/;
+	const expPreco = /[0-9]{1,}[0-9]{2}/;
 
-	if (preco.value.test(expPreco)) {
+	if (expPreco.test(preco.value)) {
 		preco.setCustomValidity("Somente números e vírgula");
+		return;
 	}
 
 	novoProduto(
