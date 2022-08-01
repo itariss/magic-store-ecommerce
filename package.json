@@ -1,0 +1,22 @@
+{
+  "name": "challenge-one-ecomerce",
+  "version": "1.0.0",
+  "description": "Demo ecommerce project with CRUD and Ajax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itariss/challenge-one-ecommerce.git"
+  },
+  "author": "Italo Rissardi",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "bugs": {
+    "url": "https://github.com/itariss/challenge-one-ecommerce/issues"
+  },
+  "homepage": "https://github.com/itariss/challenge-one-ecommerce#readme"
+}
