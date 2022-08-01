@@ -13,7 +13,7 @@ export const criaProduto = data => {
 				/ >
 				<div class="produtos__conteudo">
 					<h2 class="produtos__nome">${produto.nome}</h2>
-					<h2 class="produtos__preco">${produto.preco}</h2>
+					<h2 class="produtos__preco">R$ ${produto.preco}</h2>
 					<a href="./html/descricao.html?id=${produto.id}" class="produtos__link">Ver Produto</a>
 				</div>
 			</div>`;
