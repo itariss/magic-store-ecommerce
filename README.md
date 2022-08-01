@@ -2,7 +2,11 @@
 
 ### :zap: Challenge Oracle Next Education - Sprint 02-03 Trilha Front End.
 
-### :warning: Atenção!
+#### :sparkler: Links:
+
+#### [Github Pages](https://itariss.github.io/challenge-one-ecommerce/)
+
+#### :warning: Atenção!
 
 - Para poder realizar as operações CRUD (Criar, Ler, Atualizar e Deletar) no projeto, você deve baixar o prójeto, rodá-lo junto com o json-server e fazer
 o login. Usuário: admin@admin.com Senha: admin.
@@ -10,10 +14,6 @@ o login. Usuário: admin@admin.com Senha: admin.
 - Tutorial de instalação do json-server [aqui!](https://blog.betrybe.com/json-server/#2)
 
 - Caso contrário, os produtos serão carregados na página, mas não será possível fazer alterações neles.
-
-#### :sparkler: Links:
-
-#### [Github Pages](https://itariss.github.io/challenge-one-ecommerce/)
 
 #### :scroll: Descrição:
 
