@@ -4,11 +4,17 @@
     font-size: .875rem;
     font-weight: 700;
     align-self: flex-end;
+    transition: .3s;
 }
 
 .produtos__link {
     align-self: flex-start;
     margin-bottom: .5rem;
+}
+
+.produtos__link:hover,
+.produtos__link--secao:hover {
+    color: var(--btn-hover-prim);
 }
 
 @media screen and (min-width: 768px) {

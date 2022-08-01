@@ -1,17 +1,16 @@
 .produtos__img {
     width: 9.75rem;
-    height: 10.875rem;
+    height: 14.875rem;
     border-radius: 9px;
+}
+
+.produtos__img--zoom {
+    display: none;
 
 }
 
 .produtos__img:hover {
-    position: relative;
     cursor: pointer;
-    border-bottom: 3px var(--btn-color) solid;
-    border-left: 3px var(--btn-color) solid;
-    animation-name: pulse;
-    animation-duration: .8s;
 }
 
 @media screen and (min-width: 688px) {
@@ -19,11 +18,29 @@
         width: 10.25rem;
     }
 
+    .produtos__img--zoomRight {
+        display: block;
+        position: absolute;
+        right: 11.5rem;
+        z-index: 1;
+        max-width: 16.5625rem;
+        max-height: 23.125rem;
+    }
+
+    .produtos__img--zoomLeft {
+        display: inline;
+        position: absolute;
+        left: 11.5rem;
+        z-index: 1;
+        max-width: 16.5625rem;
+        max-height: 23.125rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .produtos__img {
         width: 11rem;
     }
+
 
 }

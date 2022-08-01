@@ -1,18 +1,22 @@
 .menu__login {
     background: transparent;
     border: 1px var(--btn-color) solid;
+    border-radius: 32px;
     color: var(--btn-color);
     padding: .75rem 0;
     width: 8.3125rem;
     font-size: .875rem;
     font-weight: 600;
     text-align: center;
+    transition: .5s;
 }
 
 .menu__login:hover {
     cursor: pointer;
-    background-color: var(--btn-hover-sec);
+    background-color: var(--btn-color);
+    color: var(--bg-general);
 }
+
 
 @media screen and (min-width: 768px) {
     .menu__login {

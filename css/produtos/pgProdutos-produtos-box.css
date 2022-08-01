@@ -2,6 +2,7 @@
     height: 15.5625rem;
     flex-direction: column;
     display: flex;
+    margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 360px) {

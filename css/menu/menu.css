@@ -6,7 +6,7 @@
 @import url(./menu-searchBtn.css);
 
 .menu {
-    background: var(--pure-white);
+    background: var(--bg-general);
     position: fixed;
     width: 100%;
     padding-right: 1rem;

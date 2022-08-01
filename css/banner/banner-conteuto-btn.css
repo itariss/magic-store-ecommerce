@@ -1,5 +1,5 @@
 .banner__conteudo__btn {
-    background: var(--btn-color);
+    background: var(--btn-color-sec);
     border: none;
     color: var(--pure-white);
     padding: 0.75rem 1rem;
@@ -7,11 +7,13 @@
     font-weight: 600;
     align-self: flex-start;
     text-align: center;
+    border-radius: 32px;
+    transition: .5;
 }
 
 .banner__conteudo__btn:hover {
     cursor: pointer;
-    background-color: var(--btn-hover-prim);
+    background: var(--form-border);
 }
 
 @media screen and (min-width: 1440px) {

@@ -1,16 +1,20 @@
 .formProduto__submit {
     background: var(--btn-color);
     border: 1px var(--btn-color) solid;
+    border-radius: 32px;
     color: var(--pure-white);
     padding: 0.75rem 1rem;
     font-size: .875rem;
     height: 3.1875rem;
     margin-top: .5rem;
+    transition: .5s;
+
 }
 
 .formProduto__submit:hover {
     cursor: pointer;
-    background-color: var(--btn-hover-prim);
+    color: var(--btn-color);
+    background: var(--bg-general);
 }
 
 @media screen and (min-width: 1024px) {

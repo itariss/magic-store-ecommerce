@@ -1,14 +1,20 @@
 .produtos__container {
     display: grid;
-    grid-template: 1fr / repeat(auto-fill, minmax(9.5rem, 9.5rem));
-    column-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 9.5rem));
     justify-content: space-between;
-    width: 100%;
+    column-gap: 1rem;
+    width: auto;
+}
+
+@media screen and (max-width: 359px) {
+    .produtos__container {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 688px) {
     .produtos__container {
-        grid-template: 1fr / repeat(auto-fill, minmax(9.5rem, 10.25rem));
+        grid-template-columns: repeat(auto-fill, minmax(9.5rem, 10.25rem));
         gap: 1rem;
     }
 
@@ -16,7 +22,7 @@
 
 @media screen and (min-width: 1440px) {
     .produtos__container {
-        grid-template: 1fr / repeat(auto-fill, minmax(9.5rem, 11rem));
+        grid-template-columns: repeat(auto-fill, minmax(9.5rem, 11rem));
         gap: 1rem;
     }
 

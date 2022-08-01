@@ -1,8 +1,18 @@
 .produtos__admin__btn {
-    color: var(--pure-white);
+    color: var(--btn-color-sec);
+    background: var(--pure-white);
+    border-radius: 50%;
+    padding: .5rem;
     font-size: 0.875rem;
+    margin-bottom: -1rem;
+}
+
+.produtos__admin__btn:hover {
+    cursor: pointer;
+    color: var(--pure-white);
+    background: var(--btn-color-sec);
 }
 
 .produtos__admin__btn:last-of-type {
-    margin-right: 1.5rem;
+    margin-right: .5rem;
 }

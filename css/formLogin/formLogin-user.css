@@ -3,14 +3,14 @@
     width: 100%;
     border-radius: 4px;
     border: none;
-    border-bottom: 2px var(--form-border) solid;
+    border-bottom: 2px var(--btn-color) solid;
     outline: none;
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
 
 .formLogin__user:focus {
-    border-bottom: 2px var(--btn-color) solid;
+    border-bottom: 2px var(--form-border) solid;
 }
 
 .formLogin__label--user {
@@ -28,7 +28,13 @@
 .formLogin__user:focus~.formLogin__label--user,
 .formLogin__user:not(:focus):valid~.formLogin__label--user {
     font-size: .75rem;
-    color: var(--btn-color);
+    color: var(--form-border);
+    bottom: 4.525rem;
+}
+
+.formLogin__user:indeterminate {
+    font-size: .75rem;
+    color: var(--placeholder-color);
     bottom: 4.525rem;
 }
 

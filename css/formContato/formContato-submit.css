@@ -1,16 +1,18 @@
 .formContato__submit {
     align-self: flex-start;
-    background: var(--btn-color);
-    border: 1px var(--btn-color) solid;
+    background: var(--btn-color-sec);
+    border: 1px var(--btn-color-sec) solid;
     color: var(--pure-white);
     padding: 0.75rem 1rem;
     font-size: .875rem;
     position: relative;
     right: 1rem;
+    border-radius: 32px;
+    transition: .4s;
 }
 
 .formContato__submit:hover {
-    background-color: var(--hover-color-prim);
-    color: var(--btn-color);
+    background-color: var(--form-border);
+    border: 1px var(--form-border) solid;
     cursor: pointer;
 }

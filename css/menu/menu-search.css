@@ -1,5 +1,16 @@
 .menu__search {
     display: none;
+    height: 2.5rem;
+    background-color: var(--pure-white);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 1rem;
+    transition: .6s;
+}
+
+.show {
+    display: inline-flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -9,11 +20,11 @@
         height: 2.5rem;
         background: no-repeat 92%;
         background-image: url(../../img/search.png);
-        background-color: var(--bg-general);
+        background-color: var(--pure-white);
         border: none;
         outline: none;
         border-radius: 20px;
-        padding-left: 1rem;
+        padding: 0 1rem;
         margin-right: auto;
         margin-left: 2rem;
     }

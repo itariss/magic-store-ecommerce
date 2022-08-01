@@ -7,10 +7,11 @@
     outline: none;
     padding: 1rem;
     padding-top: 1.125rem;
+    border-bottom: 2px var(--btn-color) solid;
 }
 
 .formProduto__descricao:focus {
-    border-bottom: 2px var(--btn-color) solid;
+    border-bottom: 2px var(--form-border) solid;
 }
 
 .formProduto__label--descricao {

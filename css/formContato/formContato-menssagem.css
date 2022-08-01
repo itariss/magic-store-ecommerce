@@ -8,17 +8,17 @@
     outline: none;
     padding: 1rem;
     padding-top: 1.125rem;
-    border-bottom: 1px var(--form-color) solid;
+    border-bottom: 2px var(--btn-color-sec) solid;
 }
 
-.formContato__mensagem:focus {
-    border-bottom: 2px var(--btn-color) solid;
+.formContato__mensagem:focus,
+.formContato__mensagem:not(:focus):valid {
+    border-bottom: 2px var(--form-border) solid;
 }
 
 .formContato__label--mensagem {
     position: relative;
     bottom: 6.725rem;
-    pointer-events: none;
     font-size: 1rem;
     font-weight: 400;
     transition: 0.2s ease all;
@@ -30,5 +30,5 @@
 .formContato__mensagem:not(:focus):valid~.formContato__label--mensagem {
     bottom: 7.575rem;
     font-size: .75rem;
-    color: var(--btn-color);
+    color: var(--form-border);
 }
