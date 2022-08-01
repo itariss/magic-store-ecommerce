@@ -1,0 +1,41 @@
+.banner__img {
+    height: fit-content;
+    display: flex;
+    overflow: scroll;
+}
+
+.banner__img:hover {
+    cursor: -webkit-zoom-in;
+}
+
+.banner__img--Zoom:hover {
+    width: 100%;
+    cursor: -webkit-zoom-out;
+}
+
+@media screen and (max-width: 568px) {
+    .banner__img--Zoom {
+        transform: scale(1.5);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .banner__img--Zoom:hover,
+    .banner__img:hover {
+        cursor: all-scroll;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .banner__img:hover {
+        cursor: -webkit-zoom-in;
+    }
+
+    .banner__img--Zoom:hover {
+        cursor: -webkit-zoom-out;
+    }
+}

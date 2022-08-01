@@ -3,12 +3,13 @@
     width: 100%;
     transition: 1s;
     display: flex;
-
+    justify-content: center;
+    contain: content;
+    overflow-y: auto;
 }
 
 @media screen and (min-width: 768px) {
     .banner__descricao {
-
         height: 9.8125rem;
         margin-right: 1rem;
     }
