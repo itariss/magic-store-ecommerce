@@ -1,4 +1,4 @@
-import { userOrAdmin } from "./pageLocation.js";
+import { isAdmin, userOrAdmin } from "./pageLocation.js";
 import { serverService } from "./serverService.js";
 
 export const criaTodosProdutos = async () => {
@@ -25,7 +25,7 @@ export const criaTodosProdutos = async () => {
 
 		container.remove();
 	});
-	removeLinks();
+	isAdmin() ? removeLinks() : null;
 	sessaoTodos.appendChild(containerTodos);
 };
 

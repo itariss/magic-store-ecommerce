@@ -19,3 +19,12 @@ export const userOrAdmin = () => {
 </a>`;
 	}
 };
+
+export const isAdmin = () => {
+	let pageName = window.location.pathname.split("/").pop();
+	if (pageName === "admin.html") {
+		return true;
+	} else {
+		return false;
+	}
+};
