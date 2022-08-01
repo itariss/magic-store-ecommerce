@@ -1,126 +1,126 @@
 {
   "produtos": [
     {
-      "nome": "ZYZ",
+      "nome": "Produto ZYZ",
       "src": "https://media.wizards.com/2019/eld/pt_pfevHYb7HH.png",
       "preco": "R$ 60,00",
       "id": 1,
       "categoria": "cards"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto ZYZ",
       "src": "https://media.wizards.com/2019/eld/pt_8m0lSh5iFH.png",
       "preco": "R$ 60,00",
       "id": 2,
       "categoria": "cards"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto ZYZ",
       "src": "https://media.wizards.com/2019/eld/pt_zDjsB2OUS2.png",
       "preco": "R$ 60,00",
       "id": 3,
       "categoria": "cards"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto RST",
       "src": "https://media.wizards.com/2019/eld/pt_UZOv6cZTkW.png",
       "preco": "R$ 60,00",
       "id": 4,
       "categoria": "cards"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto RST",
       "src": "https://media.wizards.com/2019/eld/pt_oEnb6Qfb5C.png",
       "preco": "R$ 60,00",
       "id": 5,
       "categoria": "cards"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto RST",
       "src": "https://media.wizards.com/2019/eld/pt_Gty2gddpih.png",
       "preco": "R$ 60,00",
       "id": 6,
       "categoria": "cards"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto ABC",
       "src": "https://media.wizards.com/2021/stx/pt_bEP4x5Zk1j.png",
       "preco": "R$ 60,00",
       "id": 7,
       "categoria": "especiais"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto ABC",
       "src": "https://media.wizards.com/2021/stx/pt_n6MqNNcUNr.png",
       "preco": "R$ 60,00",
       "id": 8,
       "categoria": "especiais"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto ABC",
       "src": "https://media.wizards.com/2021/stx/pt_8a3TXY2OBJ.png",
       "preco": "R$ 60,00",
       "id": 9,
       "categoria": "especiais"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto DEF",
       "src": "https://media.wizards.com/2021/stx/pt_86MtC0M2SH.png",
       "preco": "R$ 60,00",
       "id": 10,
       "categoria": "especiais"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto DEF",
       "src": "https://media.wizards.com/2021/stx/pt_6evfQV2W9H.png",
       "preco": "R$ 60,00",
       "id": 11,
       "categoria": "especiais"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto DEF",
       "src": "https://media.wizards.com/2021/stx/pt_hR60VYmLir.png",
       "preco": "R$ 60,00",
       "id": 12,
       "categoria": "especiais"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto HIJ",
       "src": "https://m.media-amazon.com/images/I/71p+UiMJiAL._AC_SX569_.jpg",
       "preco": "R$ 60,00",
       "id": 13,
       "categoria": "decks"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto HIJ",
       "src": "https://m.media-amazon.com/images/I/71Oyu3oyLHL._AC_SX569_.jpg",
       "preco": "R$ 60,00",
       "id": 14,
       "categoria": "decks"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto HIJ",
       "src": "https://m.media-amazon.com/images/I/71oW81LtuAL._AC_SX569_.jpg",
       "preco": "R$ 60,00",
       "id": 15,
       "categoria": "decks"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto KLM",
       "src": "https://m.media-amazon.com/images/I/81pFsA6urqL._AC_SX569_.jpg",
       "preco": "R$ 60,00",
       "id": 16,
       "categoria": "decks"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto KLM",
       "src": "https://m.media-amazon.com/images/I/819Qn3FAPKL._AC_SX569_.jpg",
       "preco": "R$ 60,00",
       "id": 17,
       "categoria": "decks"
     },
     {
-      "nome": "ZYZ",
+      "nome": "Produto KLM",
       "src": "https://m.media-amazon.com/images/I/716BToBShoL._AC_SX569_.jpg",
       "preco": "R$ 60,00",
       "id": 18,
