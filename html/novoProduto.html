@@ -1,111 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/379118b5c6.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/pgNovoProduto.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<title>Alura Geek</title>
+		<link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/379118b5c6.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/reset.css" />
-	<link rel="stylesheet" href="../css/base.css" />
-	<link rel="stylesheet" href="../css/pgNovoProduto.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<title>Alura Geek</title>
-	<link rel="icon" type="image/x-icon" href="../img/favicon.svg" />
-</head>
+	<body>
+		<header class="menu">
+			<nav class="menu__div">
+				<a href="../index.html"
+					><img
+						src="../img/logo.svg"
+						alt="Home link"
+						class="menu__logo"
+				/></a>
+				<a href="./admin.html" class="menu__admin">
+					Menu Administrador
+				</a>
+				<input
+					type="search"
+					class="menu__search"
+					placeholder="O que você deseja encontrar?"
+					data-menu-search
+				/>
+				<button class="menu__searchBtn" type="submit">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</nav>
+		</header>
 
-<body>
-	<header class="menu">
-		<nav class="menu__div">
-			<a href="../index.html"><img src="../img/logo.svg" alt="Home link" class="menu__logo" /></a>
-			<button class="menu__admin">Menu Administrador</button>
-			<input type="search" class="menu__search" placeholder="O que você deseja encontrar?" />
-			<button class="menu__searchBtn" type="submit">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
-		</nav>
-	</header>
+		<!-- Formulário Novo Produto -->
 
-	<!-- Formulário Novo Produto -->
+		<section class="formProduto">
+			<h1 class="formProduto__titulo">Adicionar novo produto</h1>
+			<!-- Campo imagem -->
+			<form class="formProduto__form" id="produtoForm" data-form-produto>
+				<input
+					type="url"
+					class="formProduto__imagem"
+					name="produto-imagem"
+					id="produtoImagem"
+					required
+					data-form-produto-imagem
+				/>
+				<label for="produtoImagem" class="formProduto__label--imagem"
+					>URL da Imagem</label
+				>
+				<!-- Campo categoria -->
 
-	<section class="formProduto">
-		<h1 class="formProduto__titulo">Adicionar novo produto</h1>
-		<!-- Campo imagem -->
-		<form class="formProduto__form" id="produtoForm" data-form-produto>
-			<input type="url" class="formProduto__imagem" name="produto-imagem" id="produtoImagem" required
-				data-form-produto-imagem />
-			<label for="produtoImagem" class="formProduto__label--imagem">URL da Imagem</label>
-			<!-- Campo categoria -->
+				<input
+					type="text"
+					class="formProduto__categoria"
+					name="produto-categoria"
+					id="produtoCategoria"
+					required
+					data-form-produto-categoria
+				/>
+				<label
+					for="produtoCategoria"
+					class="formProduto__label--categoria"
+					>Categoria</label
+				>
+				<input
+					type="text"
+					class="formProduto__nome"
+					name="produto-nome"
+					id="produtoNome"
+					maxlength="20"
+					required
+					data-form-produto-nome
+				/>
+				<label for="produtoNome" class="formProduto__label--nome"
+					>Nome do Produto</label
+				>
+				<!-- Campo preço -->
 
-			<input type="text" class="formProduto__categoria" name="produto-categoria" id="produtoCategoria" required
-				data-form-produto-categoria />
-			<label for="produtoCategoria" class="formProduto__label--categoria">Categoria</label>
-			<input type="text" class="formProduto__nome" name="produto-nome" id="produtoNome" required
-				data-form-produto-nome />
-			<label for="produtoNome" class="formProduto__label--nome">Nome do Produto</label>
-			<!-- Campo preço -->
+				<input
+					type="text"
+					name="produto-preco"
+					id="produtoPreco"
+					class="formProduto__preco"
+					required
+					data-form-produto-preco
+				/>
+				<label for="produtoPreco" class="formProduto__label--preco"
+					>Preço</label
+				>
+				<!-- Campo descrição -->
 
-			<input type="text" name="produto-preco" id="produtoPreco" class="formProduto__preco" required
-				data-form-produto-preco />
-			<label for="produtoPreco" class="formProduto__label--preco">Preço</label>
-			<!-- Campo descrição -->
+				<textarea
+					name="produto-descricao"
+					id="produtoDescricao"
+					cols="30"
+					rows="10"
+					class="formProduto__descricao"
+					maxlength="150"
+					required
+					data-form-produto-descricao
+				></textarea>
+				<label
+					for="produtoDescricao"
+					class="formProduto__label--descricao"
+					>Descrição</label
+				>
+				<button type="submit" class="formProduto__submit">
+					Adicionar Produto
+				</button>
+			</form>
+		</section>
 
-			<textarea name="produto-descricao" id="produtoDescricao" cols="30" rows="10" class="formProduto__descricao"
-				required data-form-produto-descricao></textarea>
-			<label for="produtoDescricao" class="formProduto__label--descricao">Descrição</label>
-			<button type="submit" class="formProduto__submit">
-				Adicionar Produto
-			</button>
-		</form>
-	</section>
+		<!-- Formulário e Faq -->
 
-	<!-- Formulário e Faq -->
+		<section class="formContato">
+			<div class="faq">
+				<img
+					class="formContato__img"
+					src="../img/logo.svg"
+					alt=""
+					class="formContato__icone"
+				/>
+				<ul class="faq__list">
+					<li class="faq__item">
+						<a href="" class="faq__link">Quem somos nós</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Política de privacidade</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Programa de fidelidade</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Nossas lojas</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Quero ser franqueado</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Anuncie aqui</a>
+					</li>
+				</ul>
+			</div>
+			<form action="" class="formContato__form">
+				<h2 class="formContato__titulo">Fale Conosco</h2>
+				<input
+					type="text"
+					class="formContato__nome"
+					id="nome"
+					required
+				/>
+				<label for="nome" class="formContato__label--nome">Nome</label>
+				<textarea
+					name=""
+					id="mensagem"
+					class="formContato__mensagem"
+					required
+				></textarea>
+				<label for="mensagem" class="formContato__label--mensagem"
+					>Mensagem</label
+				>
+				<button class="formContato__submit">Enviar Mensagem</button>
+			</form>
+		</section>
 
-	<section class="formContato">
-		<div class="faq">
-			<img class="formContato__img" src="../img/logo.svg" alt="" class="formContato__icone" />
-			<ul class="faq__list">
-				<li class="faq__item">
-					<a href="" class="faq__link">Quem somos nós</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Política de privacidade</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Programa de fidelidade</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Nossas lojas</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Quero ser franqueado</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Anuncie aqui</a>
-				</li>
-			</ul>
-		</div>
-		<form action="" class="formContato__form">
-			<h2 class="formContato__titulo">Fale Conosco</h2>
-			<input type="text" class="formContato__nome" id="nome" required />
-			<label for="nome" class="formContato__label--nome">Nome</label>
-			<textarea name="" id="mensagem" class="formContato__mensagem" required></textarea>
-			<label for="mensagem" class="formContato__label--mensagem">Mensagem</label>
-			<button class="formContato__submit">Enviar Mensagem</button>
-		</form>
-	</section>
-
-	<footer class="rodape">
-		<h2 class="rodape__titulo">
-			Desenvoldido por
-			<a href="http://gitgub.com/itariss" target="_blank" rel="noopener noreferrer">Ítalo Rissardi</a>
-		</h2>
-		<h3 class="rodape__ano">2022</h3>
-	</footer>
-	<script type="module" src="../js/services/novoProduto.js"></script>
-</body>
-
+		<footer class="rodape">
+			<h2 class="rodape__titulo">
+				Desenvoldido por
+				<a
+					href="http://gitgub.com/itariss"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Ítalo Rissardi</a
+				>
+			</h2>
+			<h3 class="rodape__ano">2022</h3>
+		</footer>
+		<script type="module" src="../js/services/novoProduto.js"></script>
+	</body>
 </html>

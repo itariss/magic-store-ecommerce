@@ -1,91 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/379118b5c6.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/pgLogin.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<title>Alura Geek</title>
+		<link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/379118b5c6.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/reset.css" />
-	<link rel="stylesheet" href="../css/base.css" />
-	<link rel="stylesheet" href="../css/pgLogin.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<title>Alura Geek</title>
-	<link rel="icon" type="image/x-icon" href="../img/favicon.svg" />
-</head>
+	<body>
+		<header class="menu">
+			<nav class="menu__div">
+				<a href="../index.html"
+					><img
+						src="../img/logo.svg"
+						alt="Home link"
+						class="menu__logo"
+				/></a>
+				<input
+					type="search"
+					class="menu__search"
+					placeholder="O que você deseja encontrar?"
+				/>
+				<button class="menu__searchBtn" type="submit">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</nav>
+		</header>
 
-<body>
-	<header class="menu">
-		<nav class="menu__div">
-			<a href="../index.html"><img src="../img/logo.svg" alt="Home link" class="menu__logo" /></a>
-			<input type="search" class="menu__search" placeholder="O que você deseja encontrar?" />
-			<button class="menu__searchBtn" type="submit">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
-		</nav>
-	</header>
+		<!-- Formulário Login -->
 
-	<!-- Formulário Login -->
+		<section action="" class="formLogin">
+			<h1 class="formLogin__titulo">Iniciar Sessão</h1>
+			<form action="" class="formLogin__form" data-form-login>
+				<input
+					type="email"
+					id="user"
+					class="formLogin__user"
+					autocomplete="off"
+					required
+					data-input-user
+				/>
+				<label for="email" class="formLogin__label--user">Email</label>
+				<input
+					type="password"
+					id="password"
+					class="formLogin__password"
+					required
+					data-input-password
+				/>
+				<label for="password" class="formLogin__label--password"
+					>Senha</label
+				>
+				<button type="submit" class="formLogin__submit">Entrar</button>
+			</form>
+		</section>
 
-	<section action="" class="formLogin">
-		<h1 class="formLogin__titulo">Iniciar Sessão</h1>
-		<form action="" class="formLogin__form" data-form-login>
-			<input type="email" id="user" class="formLogin__user" autocomplete="off" required />
-			<label for="email" class="formLogin__label--user">Email</label>
-			<input type="password" id="password" class="formLogin__password" required data-form-login-user />
-			<label for="password" class="formLogin__label--password">Senha</label>
-			<button type="submit" class="formLogin__submit">Entrar</button>
-		</form>
-	</section>
+		<!-- Formulário e Faq -->
 
-	<!-- Formulário e Faq -->
+		<section class="formContato">
+			<div class="faq">
+				<img
+					class="formContato__img"
+					src="../img/logo.svg"
+					alt=""
+					class="formContato__icone"
+				/>
+				<ul class="faq__list">
+					<li class="faq__item">
+						<a href="" class="faq__link">Quem somos nós</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Política de privacidade</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Programa de fidelidade</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Nossas lojas</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Quero ser franqueado</a>
+					</li>
+					<li class="faq__item">
+						<a href="" class="faq__link">Anuncie aqui</a>
+					</li>
+				</ul>
+			</div>
+			<form action="" class="formContato__form">
+				<h2 class="formContato__titulo">Fale Conosco</h2>
+				<input
+					type="text"
+					class="formContato__nome"
+					id="nome"
+					required
+				/>
+				<label for="nome" class="formContato__label--nome">Nome</label>
+				<textarea
+					name=""
+					id="mensagem"
+					class="formContato__mensagem"
+					required
+				></textarea>
+				<label for="mensagem" class="formContato__label--mensagem"
+					>Mensagem</label
+				>
+				<button class="formContato__submit">Enviar Mensagem</button>
+			</form>
+		</section>
 
-	<section class="formContato">
-		<div class="faq">
-			<img class="formContato__img" src="../img/logo.svg" alt="" class="formContato__icone" />
-			<ul class="faq__list">
-				<li class="faq__item">
-					<a href="" class="faq__link">Quem somos nós</a>
-				</li>
-				<li class="faq__item">
-					data-form-login
-					<a href="" class="faq__link">Política de privacidade</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Programa de fidelidade</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Nossas lojas</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Quero ser franqueado</a>
-				</li>
-				<li class="faq__item">
-					<a href="" class="faq__link">Anuncie aqui</a>
-				</li>
-			</ul>
-		</div>
-		<form action="" class="formContato__form">
-			<h2 class="formContato__titulo">Fale Conosco</h2>
-			<input type="text" class="formContato__nome" id="nome" required />
-			<label for="nome" class="formContato__label--nome">Nome</label>
-			<textarea name="" id="mensagem" class="formContato__mendata-form-loginsagem" required></textarea>
-			<label for="mensagem" class="formContato__label--mensagem">Mensagem</label>
-			<button class="formContato__submit">Enviar Mensagem</button>
-		</form>
-	</section>
-
-	<footer class="rodape">
-		<h2 class="rodape__titulo">
-			Desenvoldido por
-			<a href="http://gitgub.com/itariss" target="_blank" rel="noopener noreferrer">Ítalo Rissardi</a>
-		</h2>
-		<h3 class="rodape__ano">2022</h3>
-	</footer>
-	<script src="../js/forms/formLogin.js"></script>
-</body>
-
+		<footer class="rodape">
+			<h2 class="rodape__titulo">
+				Desenvoldido por
+				<a
+					href="http://gitgub.com/itariss"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Ítalo Rissardi</a
+				>
+			</h2>
+			<h3 class="rodape__ano">2022</h3>
+		</footer>
+		<script src="../js/forms/formLogin.js"></script>
+	</body>
 </html>
