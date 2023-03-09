@@ -4,7 +4,7 @@
 
 #### :sparkler: Links:
 
-#### [Github Pages](https://itariss.github.io/challenge-one-ecommerce/)
+#### [Github Pages](https://itariss.github.io/magic-store-ecommerce/index.html)
 
 #### :warning: Atenção!
 
